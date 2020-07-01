@@ -1,4 +1,5 @@
 @import url('../css/fonts.css');
+@import url('../css/animation.css');
 
 *{
     margin: 0;
@@ -172,13 +173,21 @@ header{
     height: 90vh;
 }
 .title-container{
+    position: relative;
     height: 100%;
     width: 45%;
     margin: auto;
     justify-content: center;
     align-items: center;
+} 
+.title-style{
+    position: absolute;
+    height: 100%;
+    width: 100%;
     background-color: #E8EAF6;
     border-radius:74% 26% 34% 70% / 43% 19% 77% 58%;
+    animation: float 6s ease infinite;
+    z-index: -1;
 }
 .title{
     padding: 0 2rem;
