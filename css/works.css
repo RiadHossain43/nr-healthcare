@@ -25,7 +25,7 @@
     padding: 10px;  
 }
 .project{
-    height: 40vh;
+    height: 50vh;
     background-size: cover;
     background-attachment: fixed;
     margin: 10px;
@@ -61,10 +61,11 @@
     transform: translate(-50%,-50%);
     background: #eeeeee;
     z-index: 3;
+    padding: 2rem;
 }
-.req-f{
+/* .req-f{
    
-}
+} */
 
 @media only screen and (max-width:768px) {
     .projects{
