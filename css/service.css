@@ -2,6 +2,7 @@
     background-color: #f1f1f1;
     border-radius: 0% 100% 0% 100% / 87% 46% 54% 13% ;
 }
+
 .service-wrapper{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -30,7 +31,7 @@
     padding: .5rem;
     margin: auto;
 }
-.service-detail{
+/* .service-detail{
     height: calc(60vh + 2rem);
     padding: 2rem;
     background-color: white;
@@ -39,7 +40,7 @@
     -webkit-box-shadow: 0px 17px 29px -13px rgba(184,127,184,1);
     -moz-box-shadow: 0px 17px 29px -13px rgba(184,127,184,1);
     box-shadow: 0px 17px 29px -13px rgba(184,127,184,1);
-}
+} */
 .service-short-dt{
     text-align: center;
 }
@@ -71,9 +72,9 @@
         margin: .5rem;
         padding: 1rem;
     }
-    .service-detail{
+    /* .service-detail{
         height: 30vh;
-    }
+    } */
     .service-detail-wrapper{
         width: 100%;
     }

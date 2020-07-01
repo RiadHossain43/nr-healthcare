@@ -1,3 +1,9 @@
+.understanding_problem{
+    font-size: 1.3rem;
+}
+.service-detail{
+    width: 70%;
+}
 .projects{
     color: white;
     display: grid;
