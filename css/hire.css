@@ -1,0 +1,113 @@
+:root{
+    --input-border-color:#4F4F4F;
+    --input-focus-color:black;
+    --focus-color:#4DD0E1;
+}
+.hire{
+    padding:5rem 6rem ;
+}
+.hire-title{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+#header{
+    background-color: #383838;
+}
+#contact_form{
+    display: flex;
+    flex-wrap: wrap;
+}
+#send_msg{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#contact_info{
+    box-sizing: border-box;
+    width: 40%;
+    padding: 1em 2em;
+}
+.full_width{
+    width: 95%;
+    margin: .4em auto; 
+}
+.half_width{
+    width: 45%;
+    margin: .4em auto;
+}
+.field{
+    opacity: 1;
+}
+.input{
+    box-sizing: border-box;
+    display: block;
+    border-bottom: 1px solid var(--input-border-color);
+    height: 8vh;
+    font-size: 18px;
+    padding:1em;
+    width: 100%;
+}
+.input:focus{
+    border: 1px solid var(--input-focus-color);
+}
+textarea{
+    box-sizing: border-box;
+    height: 30vh;
+    resize: vertical;
+    padding:1em;
+    width: 100%;
+    border-bottom: 1px solid var(--input-border-color);
+    font-size: 18px;
+}
+textarea:focus{
+    border: 1px solid var(--input-focus-color);
+}
+.submit_btn{
+    padding: 1em;
+    border: 1px solid var(--input-border-color);
+    border-radius: 5px;
+    transition: .3s;
+}
+.submit_btn:hover{
+    color: white;
+    background-color: var(--input-focus-color);
+}
+.contact_typ{
+    line-height: 130%;
+    margin: 4em 0;
+    border-left: 3px solid var(--input-border-color);
+    padding-left: 10px;
+    opacity: 1;
+}
+.contact_typ i{
+    margin: 0 8px;
+    color: var(--focus-color);
+}
+::placeholder{
+    color: #757575;
+}
+@media screen and (max-width:992px){
+    #contact_form{
+        flex-direction:column;
+    }
+    #send_msg, #contact_info{
+        width:100%;
+    }
+    .contact_typ{
+        margin: 1em 0;
+    }
+}
+@media screen and (max-width:768px){
+    .hire{
+        padding:1rem 1rem;
+    }
+    .full_width{
+        width: 98%;
+    }
+    .half_width{
+        width: 48%;
+    }
+    #contact_info{
+        padding: .5em 1em;
+    }
+ }

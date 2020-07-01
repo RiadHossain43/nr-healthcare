@@ -1,0 +1,48 @@
+.about{
+    background-color: #f1f1f1;
+}
+.about-info{
+    height: 60vh;
+    width: 55%;
+    margin: auto;
+    border:5px solid #333333;
+    text-align: justify;
+    padding: 3rem;
+}
+.about-visuals{
+    position: relative;
+    height: 60vh;
+    width: 40%;
+    margin: auto;
+}
+.video,.video-design{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    height: 80%;
+    width: 80%;
+}
+.video{
+    transform: translate(-55%,-45%);
+}
+.my-video{
+    width: 100%;
+}
+.video-design{
+    transform: translate(-45%,-55%);
+    border: 10px solid #333333;
+}
+@media screen and (max-width:768px){
+    .about{
+        flex-direction: column-reverse;
+    }
+    .about-info{
+        height:auto;
+        width: 100%;
+        padding: 1rem;
+    }
+    .about-visuals{
+        height: 45vh;
+        width: 100%;
+    }
+}
