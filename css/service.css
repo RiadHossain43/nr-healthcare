@@ -45,7 +45,8 @@
     text-align: center;
     margin: 1rem;
 }
-.learn-more{
+.learn-more a{
+    display: block;
     text-decoration: none;
     color: white;
     background-color: #303F9F;

@@ -85,12 +85,13 @@ header{
     position: sticky;
     top: 0;
     z-index: 2;
+    /* height: 20vh; */
 
     border-radius:10% 0% 10% 10% / 0% 0% 10% 10%  ;
 }
 .brand-name,.nav,.social{
     height: 20vh;
-    overflow: hidden;
+   
 }
 .brand-name img{
     height: 40%;
@@ -148,23 +149,34 @@ header{
     /* background-color: red; */
 }
 .links{
-    height: 100%;
+    height: 30%;
+    /* background-color: red; */
+    margin: auto 0;
 }
-.link{
+.link>a{
     position: relative;
     margin: auto 1.5rem;
     font-size: 1.2rem;
-    padding-bottom: 1.3rem;
     transition: .5s;
-    border-bottom: 2px solid rgba(233,30,99,0);
+    padding-top: .8rem;
+    border-top: 2px solid rgba(233,30,99,0);
 }
-/* nav ul li a {
-    display: block;
-    padding: 0 10px;
-} */
-.link:hover{
-    padding-bottom: .3rem;
-    border-bottom: 2px solid rgba(233,30,99,1);
+.link>a:hover{
+    padding-top: .2rem;
+    border-top: 2px solid rgba(233,30,99,1);
+}
+.sub-links{
+    background: #3949AB;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: .2s;
+}
+.sub-link{
+    margin:auto;
+}
+.link:hover > .sub-links{
+    height: 15rem;
 }
 .social-link{
     margin: auto 3.5rem auto .1rem;
@@ -319,6 +331,10 @@ header{
     } 
     .social-link{
         margin:1rem;
+    }
+    .links{
+        height: 100%;
+
     }
     .link-icon{
         height: 1rem;
