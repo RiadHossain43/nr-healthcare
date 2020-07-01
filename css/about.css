@@ -9,6 +9,9 @@
     text-align: justify;
     padding: 3rem;
 }
+.about-info>p{
+    font-size: 1.3rem;
+}
 .about-visuals{
     position: relative;
     height: 60vh;
