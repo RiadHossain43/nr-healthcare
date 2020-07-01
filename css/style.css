@@ -337,7 +337,17 @@ header{
     }
     .links{
         height: 100%;
-
+        margin: 1rem 0;
+    }
+    .link{
+        margin: auto 0;
+    }
+    .link>a{
+        margin: auto 1.5rem;
+        font-size: 1.2rem;
+        transition: .5s;
+        padding-top: 0;
+        border-top: none;
     }
     .link-icon{
         height: 1rem;
@@ -398,5 +408,8 @@ header{
     }
     .follow-me,.copyright{
         padding: 1.5rem 0;
+    }
+    .social-link-ftr{
+        margin:.7rem;
     }
 }
