@@ -1,8 +1,22 @@
 .understanding_problem{
     font-size: 1.3rem;
 }
+.risk-assesment{
+    position: relative;
+}
 .service-detail{
     width: 70%;
+}
+.risk-assesment-wrapper{
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin:2rem auto;
+    padding: .5rem;
+    width: 100%;
+}
+.service-name{
+    text-align: center;
 }
 .projects{
     color: white;
@@ -16,6 +30,7 @@
     background-attachment: fixed;
     margin: 10px;
     border-radius: 4px;
+    padding:0 3rem;
     transition: .3s;
 
     -webkit-box-shadow: 0px 9px 25px -8px rgba(0,7,79,1);
@@ -29,23 +44,28 @@
     -moz-box-shadow: 0px 9px 25px -8px rgba(0,4,41,1);
     box-shadow: 0px 9px 25px -8px rgba(0,4,41,1);
 }
-.project:nth-of-type(1){
-    grid-column: 1/3;
+.make_req{
+    padding: 1rem;
+    font-size: 1.3rem;
+    border: 1px solid black;
+    background: transparent;
+    margin: 1rem;
 }
-.project:nth-of-type(6){
-    grid-column: 3/5;
+.req_form_container{
+    position: fixed;
+    display: none;
+    height: 90vh;
+    width: 90%;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background: #eeeeee;
+    z-index: 3;
 }
-.project:nth-of-type(7){
-    grid-column: 1/3;
+.req-f{
+   
 }
-.project-bg1{
-    background-image: url('/assets/projects/home_back_2.jpg');
 
-}
-.project-bg2{
-    background-image: url('/assets/projects/home_back_4.jpg');
-
-}
 @media only screen and (max-width:768px) {
     .projects{
         padding:5px;

@@ -38,6 +38,7 @@
 .field{
     opacity: 1;
 }
+
 .input{
     box-sizing: border-box;
     display: block;
@@ -46,12 +47,14 @@
     font-size: 18px;
     padding:1em;
     width: 100%;
+    background: transparent;
 }
 .input:focus{
     border: 1px solid var(--input-focus-color);
 }
 textarea{
     box-sizing: border-box;
+    background: transparent;
     height: 30vh;
     resize: vertical;
     padding:1em;
