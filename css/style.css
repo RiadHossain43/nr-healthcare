@@ -40,6 +40,16 @@ input,textarea,button{
     border: none;
     outline: none;
 }
+button,a{
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 main > div{
     padding: 5rem;
 }
@@ -147,10 +157,10 @@ header{
     background: transparent;
 }
 .menu-open .menu-btn-burger::before{
-    transform: rotate(45deg) translate(14px,-14px);
+    transform: rotate(45deg) translate(10px,-10px);
 }
 .menu-open .menu-btn-burger::after{
-    transform: rotate(-45deg) translate(14px,14px);
+    transform: rotate(-45deg) translate(10px,10px);
 }
 .nav{
     transition: .3s;
