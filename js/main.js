@@ -10,8 +10,12 @@ window.addEventListener('load', () => {
     const menu_btn = document.querySelector('.menu-btn')
     const nav = document.querySelector('.nav')
     const make_req = document.querySelectorAll('button')
+    const sublinks = document.querySelector('.sub-links')
     const sub_link = document.querySelectorAll('.sub-link')
     const req_form_container = document.querySelector('.req_form_container')
+    const drop_down = document.querySelector('.drop-down')
+    const link = document.querySelectorAll('.link')
+    const service = document.getElementById('service')
 
     // const req_form_content = document.querySelector('.req_form_container')
 
@@ -19,7 +23,13 @@ window.addEventListener('load', () => {
         nav.classList.toggle('nav-expand')
         menu_btn.classList.toggle('menu-open')
     })
-
+    drop_down.addEventListener('click',()=>{
+        sublinks.classList.toggle('drop')
+    })
+    
+        service.addEventListener('mouseover',()=>sublinks.classList.add('drop'))
+        service.addEventListener('mouseout',()=> sublinks.classList.remove('drop'))
+   
     make_req.forEach(btn => requestService(btn))
     sub_link.forEach(btn => requestService(btn))
 
