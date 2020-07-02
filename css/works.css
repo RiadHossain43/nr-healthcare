@@ -54,9 +54,17 @@
     top: 50%;
     left:50%;
     transform: translate(-50%,-50%);
-    background: #eeeeee;
+    background: #E8EAF6;
+    border-radius: 5px;
     z-index: 3;
     padding: 2rem;
+}
+.req-form{
+    width: 95%;
+    /* background-color: red; */
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 .req_back{
     font-size: 1.5rem;
@@ -77,6 +85,13 @@
     }
     .req_form_container{
         padding: 1rem;
+    }
+    .req_form_container{
+        height: 94vh;
+        width: 98%;
+    }
+    .req-form{
+        width: 100%;
     }
     
 }
