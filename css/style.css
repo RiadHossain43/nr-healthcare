@@ -15,6 +15,7 @@ body{
     box-sizing: border-box;
     overflow-x: hidden;
     font-family: Roboto,cursive;
+    width: 100%;
 }
 /*---------global classes---------*/
 .flex-row{
@@ -95,7 +96,7 @@ main > div{
 }
 .style-icon-1:nth-of-type(2){
     position: absolute;
-    left:80%;
+    right: -10%;
     top: 50%;
     height: 6rem;
     z-index: -1;
@@ -353,7 +354,7 @@ header{
 
 
 @media only screen and (max-width:768px) {
-
+   
     .brand-name,.nav,.social{
         height: 8vh;
         overflow: hidden;
