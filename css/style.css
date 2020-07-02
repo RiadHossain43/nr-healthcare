@@ -224,7 +224,7 @@ header{
 }
 .title{
     padding: 0 2rem;
-    border-left:2px solid #333333;
+    /* border-left:2px solid #333333; */
 }
 .title h2{
     font-size: 2rem;
