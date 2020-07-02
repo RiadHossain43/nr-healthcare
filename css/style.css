@@ -85,6 +85,23 @@ main > div{
 	background-color: #555;
 }
 
+.style-icon-1:nth-of-type(1){
+    position: absolute;
+    left:-10%;
+    top: 70%;
+    height: 6rem;
+    z-index: -1;
+    opacity: .4;
+}
+.style-icon-1:nth-of-type(2){
+    position: absolute;
+    left:80%;
+    top: 50%;
+    height: 6rem;
+    z-index: -1;
+    opacity: .4;
+}
+
 /*--------------------body-------------------*/
 
 /*---------------navigation-------------------*/
