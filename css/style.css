@@ -175,6 +175,9 @@ header{
 }
 .drop-down{
     display: none;
+    transition: .3s;
+    font-size: 1.4rem;
+    color: white;
 }
 .sub-links{
     background: #3949AB;
@@ -184,7 +187,11 @@ header{
     transition: .2s;
 }
 .drop{
+    position: relative;
     height: 15rem;
+}
+.up{
+    transform: rotate(180deg);
 }
 .sub-link{
     margin:auto;
@@ -370,7 +377,7 @@ header{
         height: 0;
     } */
     .drop-down{
-        display: inline;
+        display: inline-block;
     }
     
     .link-icon{

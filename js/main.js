@@ -24,6 +24,7 @@ window.addEventListener('load', () => {
         menu_btn.classList.toggle('menu-open')
     })
     drop_down.addEventListener('click',()=>{
+        drop_down.classList.toggle('up')
         sublinks.classList.toggle('drop')
     })
     
