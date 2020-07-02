@@ -44,6 +44,10 @@
         width: 100%;
         padding: 1rem;
     }
+    .about-info>h1{
+        font-size: 1.4rem;
+        margin-bottom: .4rem;
+    }
     .about-visuals{
         height: 45vh;
         width: 100%;
