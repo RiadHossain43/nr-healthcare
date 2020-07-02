@@ -60,6 +60,7 @@
     
     .services{
         flex-direction: column-reverse;
+        padding: .5rem;
     }
     .service-wrapper{
         grid-template-columns: repeat(2,1fr);
@@ -71,8 +72,8 @@
     }
     .service{
         height: 25vh;
-        margin: .5rem;
-        padding: 1rem;
+        margin: .3rem;
+        padding: .6rem;
     }
     /* .service-detail{
         height: 30vh;
@@ -90,5 +91,8 @@
     .learn-more{
         padding:1rem;
         font-size: 1rem;
+    }
+    .service-short-dt{
+        margin: 1rem 0;
     }
 }
