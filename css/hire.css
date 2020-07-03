@@ -29,11 +29,11 @@
 }
 .full_width{
     width: 95%;
-    margin: .4em auto; 
+    margin: .2rem auto; 
 }
 .half_width{
     width: 45%;
-    margin: .4em auto;
+    margin: .2rem auto;
 }
 .field{
     opacity: 1;
