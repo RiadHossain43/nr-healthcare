@@ -18,6 +18,14 @@ window.addEventListener('load', () => {
     const service = document.getElementById('service')
 
     // const req_form_content = document.querySelector('.req_form_container')
+    
+    setTimeout(function () {
+        let viewheight = window.innerHeight;
+        let viewwidth = window.innerWidth;
+        //console.log(viewheight,viewwidth);
+        let viewport = document.querySelector("meta[name=viewport]");
+        viewport.setAttribute("content", "height=" + viewheight + "px, width=" + viewwidth + "px, initial-scale=1.0");
+    },300);
 
     menu_btn.addEventListener('click', () => {
         nav.classList.toggle('nav-expand')
