@@ -118,4 +118,8 @@
     .service-short-dt{
         margin: 1rem 0;
     }
+    .consult-img{
+        height: 105%;
+        width: auto;
+    }
 }
