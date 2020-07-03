@@ -17,12 +17,13 @@ window.addEventListener('load', () => {
     const link = document.querySelectorAll('.link')
     const service = document.getElementById('service')
 
-    // const req_form_content = document.querySelector('.req_form_container')
-    
+    let requests = ['Risk Assessments','27002 Controls Implementation','Independent Audits',
+                    'Awareness and Training','Management Reviews','Continual Improvement Planning']
+
+
     setTimeout(function () {
         let viewheight = window.innerHeight;
         let viewwidth = window.innerWidth;
-        //console.log(viewheight,viewwidth);
         let viewport = document.querySelector("meta[name=viewport]");
         viewport.setAttribute("content", "height=" + viewheight + "px, width=" + viewwidth + "px, initial-scale=1.0");
     },300);
@@ -36,23 +37,21 @@ window.addEventListener('load', () => {
         sublinks.classList.toggle('drop')
     })
     
-        // service.addEventListener('mouseover',()=>sublinks.classList.add('drop'))
-        // service.addEventListener('mouseout',()=> sublinks.classList.remove('drop'))
-   
-    make_req.forEach(btn => requestService(btn))
-    sub_link.forEach(btn => requestService(btn))
+
+    for(let i=0;i<make_req.length;i++){
+        make_req[i].addEventListener('click',(e)=>requestService(e,i))
+    }
+    for(let i=0;i<make_req.length;i++){
+        sub_link[i].addEventListener('click',(e)=>requestService(e,i))
+    }
 
 
-    function requestService(btn) {
-        // let req_form_container = document.createElement('div')
-        // req_form_container.classList.add('req_form_container')
-        // body.appendChild(req_form_container)
-        btn.addEventListener('click', function (e) {
-
+    function requestService(btn,i) {
+       
             req_form_container.style.display = 'block'
             req_form_container.innerHTML = `
                 <button class="req_back"><img src="./assets/styleicons/cross.svg" class="cross" alt=""></button>
-                <h2>Fill the form to make a request for the service</h2>
+                <h2>Fill the form to get ${requests[i]} service</h2>
                 <form class="req-form" action="" method="POST">
                     <div class="half_width field req-f"><input class="input" type="text" name="name" id="Name"
                             placeholder="Name"></div>
@@ -77,8 +76,6 @@ window.addEventListener('load', () => {
                     req_form_container.innerHTML = ''
                 })
             })
-        })
-
     }
 
 
