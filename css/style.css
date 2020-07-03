@@ -224,9 +224,9 @@ header{
 .sub-link{
     margin:auto;
 }
-/* .link:hover > .sub-links{
+.link:hover > .sub-links{
     height: 15rem;
-} */
+}
 
 .social-link{
     margin: auto 3.5rem auto .1rem;

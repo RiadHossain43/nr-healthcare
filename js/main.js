@@ -28,8 +28,8 @@ window.addEventListener('load', () => {
         sublinks.classList.toggle('drop')
     })
     
-        service.addEventListener('mouseover',()=>sublinks.classList.add('drop'))
-        service.addEventListener('mouseout',()=> sublinks.classList.remove('drop'))
+        // service.addEventListener('mouseover',()=>sublinks.classList.add('drop'))
+        // service.addEventListener('mouseout',()=> sublinks.classList.remove('drop'))
    
     make_req.forEach(btn => requestService(btn))
     sub_link.forEach(btn => requestService(btn))

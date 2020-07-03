@@ -18,8 +18,19 @@
 .service-name{
     text-align: center;
 }
-
+.service-name,.service-short-dt,.make_req{
+    z-index: 1;
+}
+.service-img{
+    position: absolute;
+    height: 25rem;
+    opacity: .4;
+    top: 35%;
+    left: 0;
+    transform: translate(-10%,0);
+}
 .project{
+    position: relative;
     height: 50vh;
     background-size: cover;
     background-attachment: fixed;
@@ -27,24 +38,32 @@
     border-radius: 4px;
     padding:0 3rem;
     transition: .3s;
+    overflow: hidden;
 
     -webkit-box-shadow: 0px 9px 25px -8px rgba(0,7,79,1);
     -moz-box-shadow: 0px 9px 25px -8px rgba(0,7,79,1);
     box-shadow: 0px 9px 25px -8px rgba(0,7,79,1);
 }
 .project:hover{
-    transform: scale(1.01);
+    background: #283593;
+    color: white;
 
     -webkit-box-shadow: 0px 9px 25px -8px rgba(0,4,41,1);
     -moz-box-shadow: 0px 9px 25px -8px rgba(0,4,41,1);
     box-shadow: 0px 9px 25px -8px rgba(0,4,41,1);
 }
+.project:hover>.make_req{
+    background:white;
+    color: #283593;
+}
 .make_req{
     padding: 1rem;
     font-size: 1.3rem;
-    border: 1px solid black;
-    background: transparent;
+    background: #283593;
+    border-radius: 30px;
+    color: white;
     margin: 1rem;
+    transition: 1s;
 }
 .req_form_container{
     position: fixed;
