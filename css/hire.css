@@ -101,6 +101,9 @@ textarea:focus{
     }
 }
 @media screen and (max-width:768px){
+    .input{
+        padding:.5em;
+    }
     .hire{
         padding:1rem 1rem;
     }
