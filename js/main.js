@@ -43,8 +43,8 @@ window.addEventListener('load', () => {
 
             req_form_container.style.display = 'block'
             req_form_container.innerHTML = `
-                <button class="req_back">X</button>
-                <h2 style="text-align: center;">Fill the form to make a request for the service</h2>
+                <button class="req_back"><img src="./assets/styleicons/cross.svg" class="cross" alt=""></button>
+                <h2>Fill the form to make a request for the service</h2>
                 <form class="req-form" action="" method="POST">
                     <div class="half_width field req-f"><input class="input" type="text" name="name" id="Name"
                             placeholder="Name"></div>

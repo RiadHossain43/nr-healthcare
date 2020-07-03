@@ -176,14 +176,14 @@ header{
     background: transparent;
 }
 .menu-open .menu-btn-burger::before{
-    transform: rotate(45deg) translate(10px,-10px);
+    transform: rotate(45deg) translate(5px,-5px);
 }
 .menu-open .menu-btn-burger::after{
-    transform: rotate(-45deg) translate(10px,10px);
+    transform: rotate(-45deg) translate(5px,5px);
 }
 .nav{
     transition: .3s;
-    /* background-color: red; */
+   
 }
 .links{
     height: 30%;
@@ -364,7 +364,8 @@ header{
         opacity: .4;
     }
     .style-icon-1:nth-of-type(2){
-       display: none;
+        display: none;
+       
     }
     .brand-name,.nav,.social{
         height: 8vh;
