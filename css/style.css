@@ -226,6 +226,10 @@ header{
 .sub-link{
     margin:auto 0;
 }
+.sub-link a{
+    padding-left: .5rem;
+    border-left: 2px solid #283593 ;
+}
 /* .link:hover > .sub-links{
     height: 15rem;
 } */
