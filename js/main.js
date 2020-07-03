@@ -17,6 +17,8 @@ window.addEventListener('load', () => {
     const link = document.querySelectorAll('.link')
     const service = document.getElementById('service')
 
+    // const req_form_content = document.querySelector('.req_form_container')
+
     let requests = ['Risk Assessments','27002 Controls Implementation','Independent Audits',
                     'Awareness and Training','Management Reviews','Continual Improvement Planning']
 
@@ -24,6 +26,7 @@ window.addEventListener('load', () => {
     setTimeout(function () {
         let viewheight = window.innerHeight;
         let viewwidth = window.innerWidth;
+        //console.log(viewheight,viewwidth);
         let viewport = document.querySelector("meta[name=viewport]");
         viewport.setAttribute("content", "height=" + viewheight + "px, width=" + viewwidth + "px, initial-scale=1.0");
     },300);
@@ -37,17 +40,25 @@ window.addEventListener('load', () => {
         sublinks.classList.toggle('drop')
     })
     
+        // service.addEventListener('mouseover',()=>sublinks.classList.add('drop'))
+        // service.addEventListener('mouseout',()=> sublinks.classList.remove('drop'))
+   
+    // make_req.forEach(btn => requestService(btn))
+    // sub_link.forEach(btn => requestService(btn))
 
     for(let i=0;i<make_req.length;i++){
         make_req[i].addEventListener('click',(e)=>requestService(e,i))
     }
-    for(let i=0;i<make_req.length;i++){
+    for(let i=0;i<sub_link.length;i++){
         sub_link[i].addEventListener('click',(e)=>requestService(e,i))
     }
 
 
     function requestService(btn,i) {
-       
+        // let req_form_container = document.createElement('div')
+        // req_form_container.classList.add('req_form_container')
+        // body.appendChild(req_form_container)
+        // btn.addEventListener('click', function (e) {
             req_form_container.style.display = 'block'
             req_form_container.innerHTML = `
                 <button class="req_back"><img src="./assets/styleicons/cross.svg" class="cross" alt=""></button>
@@ -76,6 +87,8 @@ window.addEventListener('load', () => {
                     req_form_container.innerHTML = ''
                 })
             })
+        // })
+
     }
 
 
