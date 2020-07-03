@@ -89,6 +89,7 @@
 }
 .req_back{
     font-size: 1.5rem;
+    background: transparent;
 }
 .cross{
     height: 2rem;
