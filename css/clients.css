@@ -1,0 +1,35 @@
+.client{
+    height: 25vh;
+    border: 1px solid black;
+    margin: 1rem 14rem;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.client-logo{
+    position: relative;
+    height: 15rem;
+    transform: translate(-20%,10%);
+}
+.client-des{
+    
+}
+.client-des h2{
+    margin:0 1rem;
+}
+.client-review{
+    margin: 1rem;
+}
+
+@media only screen and (max-width:768px) {
+    .client{
+        margin: 1rem;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+    }
+    .client-logo{
+        height: 10rem;
+        transform: translate(-70%,-10%);
+    }
+}
