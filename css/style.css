@@ -214,6 +214,7 @@ header{
     overflow: hidden;
     transition: .2s;
     padding: 0 1rem;
+    
 }
 .drop{
     position: relative;
@@ -223,7 +224,7 @@ header{
     transform: rotate(180deg);
 }
 .sub-link{
-    margin:auto;
+    margin:auto 0;
 }
 /* .link:hover > .sub-links{
     height: 15rem;
@@ -413,9 +414,9 @@ header{
         padding-top: 0;
         border-top: none;
     }
-    /* .link:hover > .sub-links{
-        height: 0;
-    } */
+    .sub-links{
+        margin-left: 1.5rem;
+    }
     .drop-down{
         display: inline-block;
     }
