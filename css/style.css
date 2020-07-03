@@ -16,6 +16,7 @@ body{
     overflow-x: hidden;
     font-family: Roboto,cursive;
     width: 100%;
+    position: sticky;
 }
 /*---------global classes---------*/
 .flex-row{
