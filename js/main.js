@@ -58,7 +58,7 @@ window.addEventListener('load', () => {
                             placeholder="Subject"></div>
                     <div class="full_width field req-f"><textarea name="message" id="about_product"
                             placeholder="Write a message ..."></textarea></div>
-                    <div class="full_width field"><button class="submit_btn">Submut</button>
+                    <div class="full_width field"><button class="submit_btn">Submit Request</button>
                     </div>
                 </form>
                 `
