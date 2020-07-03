@@ -64,6 +64,7 @@
     color: white;
     margin: 1rem;
     transition: 1s;
+    cursor: pointer;
 }
 .req_form_container{
     position: fixed;

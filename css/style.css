@@ -88,9 +88,9 @@ main > div{
 
 .style-icon-1:nth-of-type(1){
     position: absolute;
-    left:-10%;
-    top: 70%;
-    height: 6rem;
+    left:-5%;
+    top: 75%;
+    height: 15rem;
     z-index: -1;
     opacity: .4;
 }
@@ -107,7 +107,7 @@ main > div{
 
 /*---------------navigation-------------------*/
 header{
-    background-color:#5C6BC0;
+    background-color:#283593;
     flex-wrap: wrap;
     justify-content: space-between;
     position: sticky;
@@ -202,17 +202,17 @@ header{
     border-top: 2px solid rgba(233,30,99,1);
 }
 .drop-down{
-    display: none;
+    display: inline-block;
     transition: .3s;
     font-size: 1.4rem;
     color: white;
 }
 .sub-links{
     background: #3949AB;
-    text-align: center;
     height: 0;
     overflow: hidden;
     transition: .2s;
+    padding: 0 1rem;
 }
 .drop{
     position: relative;
@@ -224,9 +224,9 @@ header{
 .sub-link{
     margin:auto;
 }
-.link:hover > .sub-links{
+/* .link:hover > .sub-links{
     height: 15rem;
-}
+} */
 
 .social-link{
     margin: auto 3.5rem auto .1rem;
@@ -338,7 +338,7 @@ header{
 /*-----------------------footer------------------------*/
 .footer{
     padding: 3rem 0;
-    background-color: #5C6BC0;
+    background-color: #283593;
 }
 .follow-me,.copyright{
     padding: 3rem 0;
@@ -354,7 +354,14 @@ header{
 
 
 @media only screen and (max-width:768px) {
-   
+    .style-icon-1:nth-of-type(1){
+        position: absolute;
+        left:-10%;
+        top: 70%;
+        height: 6rem;
+        z-index: -1;
+        opacity: .4;
+    }
     .brand-name,.nav,.social{
         height: 8vh;
         overflow: hidden;
