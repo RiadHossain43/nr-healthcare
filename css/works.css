@@ -126,7 +126,7 @@
     }
     .req_form_container{
         padding: 1rem;
-        height: 85%;
+        height: 85vh;
         width: 90%;
     }
     .req_form_container>h2{
