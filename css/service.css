@@ -11,11 +11,12 @@
     padding: .5rem;
 }
 .service{
+    position: relative;
     height: 50vh;
     margin: 1rem;
     text-align: start;
     padding: 2rem;
-    background-color:white;
+    overflow: hidden;
 
     border-radius: 3px;
     -webkit-box-shadow: 0px 17px 29px -13px rgba(184,127,184,1);
@@ -45,6 +46,19 @@
     text-align: center;
     margin: 1rem;
 }
+.service-name-h{
+    color: #303F9F;
+}
+.service-short-dt,.service-name-h{
+    opacity: 0;
+    transition: .3s;
+}
+.service:hover .service-short-dt,.service:hover .service-name-h{
+    opacity: 1;
+}
+.service:hover .consult-img{
+    opacity: .2;
+}
 .learn-more a{
     display: block;
     text-decoration: none;
@@ -55,6 +69,12 @@
     width: fit-content;
     margin: 0 auto 3rem;
     border-radius: 3rem;
+}
+.consult-img{
+    position: absolute;
+    width: 110%;
+    transition: .3s;
+    opacity: 1;
 }
 @media only screen and (max-width:768px) {
     
@@ -81,9 +101,11 @@
     .service-detail-wrapper{
         width: 100%;
     }
-
+    .service-name-h{
+        font-size: 1.1rem;
+    }
     .service-name{
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     .service-short-dt{
         font-size: .8rem;
