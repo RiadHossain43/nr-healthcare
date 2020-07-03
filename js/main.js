@@ -1,4 +1,4 @@
-
+let set_style = (elem, styles) => Object.assign(elem.style, styles)
 window.addEventListener('load', () => {
     const body = document.querySelector('body')
     const menu_btn = document.querySelector('.menu-btn')
@@ -11,50 +11,45 @@ window.addEventListener('load', () => {
     const link = document.querySelectorAll('.link')
     const service = document.getElementById('service')
 
-    // const req_form_content = document.querySelector('.req_form_container')
+    
 
-    let requests = ['Risk Assessments','27002 Controls Implementation','Independent Audits',
-                    'Awareness and Training','Management Reviews','Continual Improvement Planning']
+    let requests = ['Risk Assessments', '27002 Controls Implementation', 'Independent Audits',
+        'Awareness and Training', 'Management Reviews', 'Continual Improvement Planning']
 
 
     setTimeout(function () {
         let viewheight = window.innerHeight;
         let viewwidth = window.innerWidth;
-        //console.log(viewheight,viewwidth);
         let viewport = document.querySelector("meta[name=viewport]");
         viewport.setAttribute("content", "height=" + viewheight + "px, width=" + viewwidth + "px, initial-scale=1.0");
-    },300);
+    }, 300);
 
     menu_btn.addEventListener('click', () => {
         nav.classList.toggle('nav-expand')
         menu_btn.classList.toggle('menu-open')
     })
-    drop_down.addEventListener('click',()=>{
+    drop_down.addEventListener('click', () => {
         drop_down.classList.toggle('up')
         sublinks.classList.toggle('drop')
     })
-    
-    // service.addEventListener('mouseover',()=>sublinks.classList.add('drop'))
-    // service.addEventListener('mouseout',()=> sublinks.classList.remove('drop'))
-   
-    // make_req.forEach(btn => requestService(btn))
-    // sub_link.forEach(btn => requestService(btn))
 
-    for(let i=0;i<make_req.length;i++){
-        make_req[i].addEventListener('click',(e)=>requestService(e,i))
+
+    for (let i = 0; i < make_req.length; i++) {
+        make_req[i].addEventListener('click', (e) => requestService(e, i))
     }
-    for(let i=0;i<sub_link.length;i++){
-        sub_link[i].addEventListener('click',(e)=>requestService(e,i))
+    for (let i = 0; i < sub_link.length; i++) {
+        sub_link[i].addEventListener('click', (e) => requestService(e, i))
     }
 
 
-    function requestService(btn,i) {
-        // let req_form_container = document.createElement('div')
-        // req_form_container.classList.add('req_form_container')
-        // body.appendChild(req_form_container)
-        // btn.addEventListener('click', function (e) {
-            req_form_container.style.display = 'block'
-            req_form_container.innerHTML = `
+    function requestService(btn, i) {
+       
+        set_style(req_form_container, { display: 'block', opacity: 0 })
+        setTimeout(() => {
+            set_style(req_form_container, { opacity: 1, height: '85vh' })
+        }, 20)
+
+        req_form_container.innerHTML = `
                 <button class="req_back"><img src="./assets/styleicons/cross.svg" class="cross" alt=""></button>
                 <h2>Fill the form to get ${requests[i]} service</h2>
                 <form class="req-form" action="" method="POST">
@@ -74,22 +69,20 @@ window.addEventListener('load', () => {
                     </div>
                 </form>
                 `
-            let req_back = document.querySelectorAll('.req_back')
-            req_back.forEach(btn => {
-                btn.addEventListener('click', (e) => {
-                    req_form_container.style.display = ' none'
-                    req_form_container.innerHTML = ''
-                })
+        let req_back = document.querySelectorAll('.req_back')
+        req_back.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                set_style(req_form_container, { height: '0%', opacity: 0 })
+                setTimeout(() => {
+                    set_style(req_form_container, { display: 'none' })
+                }, 200)
+                req_form_container.innerHTML = ''
             })
-        // })
+        })
 
     }
 
-
-
-
-
-
+    
 
 
 
