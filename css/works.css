@@ -18,7 +18,7 @@
 .service-name{
     text-align: center;
 }
-.service-name,.service-short-dt,.make_req{
+.service-name,.service-short-dt-s,.make_req{
     z-index: 1;
 }
 .service-img{

@@ -42,7 +42,7 @@
     -moz-box-shadow: 0px 17px 29px -13px rgba(184,127,184,1);
     box-shadow: 0px 17px 29px -13px rgba(184,127,184,1);
 } */
-.service-short-dt{
+.service-short-dt,.service-short-dt-s{
     text-align: center;
     margin: 1rem;
 }
@@ -107,7 +107,7 @@
     .service-name{
         font-size: 1.1rem;
     }
-    .service-short-dt{
+    .service-short-dt,.service-short-dt-s{
         font-size: .8rem;
     }
     .learn-more a{
