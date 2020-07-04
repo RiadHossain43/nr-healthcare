@@ -1,6 +1,11 @@
 @import url('../css/fonts.css');
 @import url('../css/animation.css');
 
+:root{
+    --theme-color: #005eb8;
+    --sublinks-color:#1565C0;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -108,7 +113,7 @@ main > div{
 
 /*---------------navigation-------------------*/
 header{
-    background-color:#283593;
+    background:var(--theme-color);
     flex-wrap: wrap;
     justify-content: space-between;
     position: sticky;
@@ -187,12 +192,13 @@ header{
     /* background-color: red; */
     margin: auto 0;
 }
+
 .link>a{
     position: relative;
     margin: auto 1.5rem;
     font-size: 1.2rem;
     transition: .5s;
-    padding-top: .8rem;
+    padding-top: .4rem;
     border-top: 2px solid rgba(233,30,99,0);
 }
 .link>a:hover{
@@ -201,12 +207,12 @@ header{
 }
 .drop-down{
     display: inline-block;
-    transition: .3s;
+    transition: .5s;
     font-size: 1.4rem;
     color: white;
 }
 .sub-links{
-    background: #3949AB;
+    background: var(--sublinks-color);
     height: 0;
     overflow: hidden;
     transition: .2s;
@@ -218,14 +224,14 @@ header{
     height: 15rem;
 }
 .up{
-    transform: rotate(180deg);
+    transform: rotate(540deg) translateX(10%);
 }
 .sub-link{
     margin:auto 0;
 }
 .sub-link a{
     padding-left: .5rem;
-    border-left: 2px solid #283593 ;
+    border-left: 2px solid #283593;
 }
 /* .link:hover > .sub-links{
     height: 15rem;
@@ -277,7 +283,7 @@ header{
 .work-sec-link{
     display: inline-block;
     padding: 1rem;
-    background-color: #5C6BC0;
+    background: var(--theme-color);
     margin: 1rem 0;
     border-radius: 5px;
 }
@@ -340,11 +346,11 @@ header{
 
 /*-----------------------footer------------------------*/
 .footer{
-    padding: 3rem 0;
-    background-color: #283593;
+    padding: 2.5rem 0;
+    background:var(--theme-color);
 }
 .follow-me,.copyright{
-    padding: 3rem 0;
+    padding: 2rem 0;
     text-align: center;
 }
 .social-link-ftr{
@@ -392,7 +398,7 @@ header{
        
     }
     .nav-expand{
-        height:60vh; 
+        height:55vh; 
     }
     .social{
         height: auto;

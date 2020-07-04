@@ -1,3 +1,7 @@
+:root{
+    --theme-color: #005eb8;
+    --consult-color:#283593;
+}
 .services{
     background-color: #f1f1f1;
     border-radius: 0% 100% 0% 100% / 87% 46% 54% 13% ;
@@ -48,7 +52,7 @@
 }
 .service-name-h{
     font-size: 2rem;
-    color: #303F9F;
+    color: var(--theme-color);
 }
 .service-short-dt,.service-name-h{
     opacity: 0;
@@ -64,7 +68,7 @@
     display: block;
     text-decoration: none;
     color: white;
-    background-color: #303F9F;
+    background: var(--theme-color);
     padding:2rem;
     font-size: 1.2rem;
     width: fit-content;

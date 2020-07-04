@@ -1,5 +1,6 @@
+
 :root{
-    --input-border-color:#4F4F4F;
+    --input-border-color:#333333;
     --input-focus-color:black;
     --focus-color:#4DD0E1;
 }
@@ -87,7 +88,7 @@ textarea:focus{
     color: var(--focus-color);
 }
 ::placeholder{
-    color: #757575;
+    color: #333333;
 }
 @media screen and (max-width:992px){
     #contact_form{
