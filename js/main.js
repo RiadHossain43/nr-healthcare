@@ -37,9 +37,9 @@ window.addEventListener('load', () => {
     for (let i = 0; i < make_req.length; i++) {
         make_req[i].addEventListener('click', (e) => requestService(e, i))
     }
-    for (let i = 0; i < sub_link.length; i++) {
-        sub_link[i].addEventListener('click', (e) => requestService(e, i))
-    }
+    // for (let i = 0; i < sub_link.length; i++) {
+    //     sub_link[i].addEventListener('click', (e) => requestService(e, i))
+    // }
 
 
     function requestService(btn, i) {
