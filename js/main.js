@@ -3,7 +3,7 @@ window.addEventListener('load', () => {
     const body = document.querySelector('body')
     const menu_btn = document.querySelector('.menu-btn')
     const nav = document.querySelector('.nav')
-    const make_req = document.querySelectorAll('button')
+    const make_req = document.querySelectorAll('.make_req')
     const sublinks = document.querySelector('.sub-links')
     const sub_link = document.querySelectorAll('.sub-link')
     const req_form_container = document.querySelector('.req_form_container')
@@ -52,7 +52,7 @@ window.addEventListener('load', () => {
         req_form_container.innerHTML = `
                 <button class="req_back"><img src="./assets/styleicons/cross.svg" class="cross" alt=""></button>
                 <h2>Fill the form to get ${requests[i]} service</h2>
-                <form class="req-form" action="" method="POST">
+                <form class="req-form" action ="" method="POST">
                     <div class="half_width field req-f"><input class="input" type="text" name="name" id="Name"
                             placeholder="Name"></div>
                     <div class="half_width field req-f"><input class="input" type="text" name="phone" id="Phone"
@@ -63,13 +63,15 @@ window.addEventListener('load', () => {
                             placeholder="Organisation"></div>
                     <div class="full_width field req-f"><input class="input" type="text" name="subject" id="company"
                             placeholder="Subject"></div>
-                    <div class="full_width field req-f"><textarea name="message" id="about_product"
+                    <div class="full_width field req-f"><textarea name="notes" id="about_product"
                             placeholder="Write a message ..."></textarea></div>
                     <div class="full_width field"><button class="submit_btn">Submit Request</button>
                     </div>
                 </form>
                 `
         let req_back = document.querySelectorAll('.req_back')
+        let req_form = document.querySelector('.req-form')
+        req_form.setAttribute('action','service_request.php')
         req_back.forEach(btn => {
             btn.addEventListener('click', (e) => {
                 set_style(req_form_container, { height: '0%', opacity: 0 })
