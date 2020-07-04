@@ -143,6 +143,7 @@
         padding:1rem;
     }
     .risk-assesment-wrapper{
+        margin:1rem auto;
         grid-template-columns: repeat(1,1fr);
     }
     .project{
