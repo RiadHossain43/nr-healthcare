@@ -57,12 +57,12 @@ window.addEventListener('load', () => {
                             placeholder="Name"></div>
                     <div class="half_width field req-f"><input class="input" type="text" name="phone" id="Phone"
                             placeholder="Phone"></div>
-                    <div class="half_width field req-f"><input class="input" type="text" name="email" id="Email"
+                    <div class="full_width field req-f"><input class="input" type="text" name="email" id="Email"
                             placeholder="Email"></div>
-                    <div class="half_width field req-f"><input class="input" type="text" name="organization" id="organization"
+                    <div class="full_width field req-f"><input class="input" type="text" name="organization" id="organization"
                             placeholder="Organisation"></div>
-                    <div class="full_width field req-f"><input class="input" type="text" name="subject" id="company"
-                            placeholder="Subject"></div>
+                    <div class="full_width field req-f"><input class="input" type="hidden" name="subject" id="company"
+                            placeholder="Subject" value="Service request for ${requests[i]}"></div>
                     <div class="full_width field req-f"><textarea name="notes" id="about_product"
                             placeholder="Write a message ..."></textarea></div>
                     <div class="full_width field"><button class="submit_btn">Submit Request</button>
