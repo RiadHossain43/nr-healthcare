@@ -9,8 +9,8 @@ function inputCheck($data)
 	return $data;
 }
 
-$nameError = $emailError = "";
-$name = $email = $message = ""; 
+$nameError = $emailError = $phoneError = "";
+$name = $email = $message = $subj = $phone = ""; 
 
 if($_SERVER["REQUEST_METHOD"] == "POST")
 {
@@ -37,6 +37,18 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 			$emailError = "Invalid email format";
 		}
 	}
+	if(empty($_POST["phone"]))
+	{
+		$phoneError = "Phone is required";
+	}
+	else 
+	{
+		$phone = inputCheck($_POST["phone"]);
+		if(!filter_var($phone, FILTER_SANITIZE_NUMBER_INT))
+		{
+			$phoneError = "Invalid phone format";
+		}
+	}
 	if(empty($_POST["message"]))
 	{
 		$message = "";
@@ -44,19 +56,28 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 	{
 		$message = inputCheck($_POST["message"]);
 	}
+	if(empty($_POST["subject"]))
+	{
+		$subj = "";
+	}else 
+	{
+		$subj = inputCheck($_POST["subject"]);
+	}
 }
-    if($nameError == "" &&  $emailError == "")
+    if($nameError == "" &&  $emailError == "" && $phoneError == "" )
 	{
 		$Client = $name;
 		$Client_email_id = $email;
+		$Client_phone = $phone;
 
 		$emailFrom = "hassanhossain43@gmail.com";
 		$emailTo = "riadhossain7464@gmail.com";
 
-		$subject = "New submission from a client";
+		$subject = $subj=="" ? "New submission from a client" : $subj ;
 		$body = "Client Name :". $Client."\n".
-				 "Client_email :".$Client_email_id."\n".
-				 "Message :".$message;
+				"Client Phone :".$Client_phone."\n".
+				"Client email :".$Client_email_id."\n".
+				"Message :".$message;
 
 		$headers = "From :". $emailFrom ."\r\n".
 					"Reply to:".$emailTo."\r\n";
