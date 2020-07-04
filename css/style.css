@@ -261,7 +261,7 @@ header{
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: #E8EAF6;
+    background: #E8EAF6;
     border-radius:74% 26% 34% 70% / 43% 19% 77% 58%;
     animation: float 6s ease infinite;
     z-index: -1;
@@ -293,7 +293,7 @@ header{
     margin: auto;
     justify-content: center;
     align-items: center;
-    background-color: lightgoldenrodyellow;
+    background: #E8EAF6;
     border-radius: 100% 0% 0% 10% / 100% 0% 0% 0% ;
 }
 .device-imgs{
