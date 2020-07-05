@@ -373,6 +373,9 @@ header{
 
 
 @media only screen and (max-width:768px) {
+    .container::-webkit-scrollbar{
+        display: none;
+    }
     .style-icon-1:nth-of-type(1){
         position: absolute;
         left:-10%;
