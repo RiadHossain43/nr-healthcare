@@ -162,6 +162,11 @@
     color: #333333;
     margin:0 .2rem;
 }
+@media only screen and (max-width:768px){
+    .testimonial{
+        width: 45%;
+    }
+}
 @media only screen and (max-width:768px) {
     
     .services{
