@@ -382,8 +382,12 @@ header{
         opacity: .4;
     }
     .style-icon-1:nth-of-type(2){
-        display: none;
-       
+        position: absolute;
+        right:-10%;
+        top: 50%;
+        height: 6rem;
+        z-index: -1;
+        opacity: .4;
     }
     .brand-name,.nav,.social{
         height: 8vh;
