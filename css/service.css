@@ -72,7 +72,8 @@
     padding:2rem;
     font-size: 1.2rem;
     width: fit-content;
-    margin: 0 auto 3rem;
+    /* margin: 0 auto 3rem; */
+    margin: auto;
     border-radius: 3rem;
 }
 .consult-img{
@@ -80,6 +81,86 @@
     width: 110%;
     transition: .3s;
     opacity: 1;
+}
+.clients-sec{
+    position: relative;
+    height: 30vh;
+    text-align: center;
+    overflow: hidden;
+    padding: auto 0;
+}
+.clients-sec h1{
+    font-size: 5rem;
+}
+.clients-sec img{
+    position:absolute;
+    left:0;
+    width: 100%;
+    z-index: -1;
+    opacity: .6;
+}
+.testimonials{
+    justify-content: center;
+    cursor: default;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+.testimonial{
+    position: relative;
+    margin: .4rem;
+    width: 26vw;
+}
+.quote{
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    transform: translateY(-30%);
+    z-index: -1;
+}
+.client-img-wrap{
+    width:8rem;
+    height: 8rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-color: white;
+}
+.client-img{
+    background-color: red;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    margin: auto;
+    overflow: hidden;
+}
+.client-img img{
+    width: 100%;
+    
+}
+.quote-q{
+    position: absolute;
+    width: 100%;
+    height: 70%;    
+    background:#e8eaf6;
+    border-radius: 10px;
+    z-index: -1;
+}
+.testimonial:hover .quote-q{
+    background: #c5cae9 ;
+}
+.quote p{    
+    margin: 1rem 0;
+}
+/* .quote h3::before{
+    position: absolute;
+    content:"";
+    width: 70px;
+    height: 4px;
+    background-color: lightgreen;
+    border-radius: 1px;
+} */
+.qot-ico{
+    color: #333333;
+    margin:0 .2rem;
 }
 @media only screen and (max-width:768px) {
     
@@ -125,5 +206,14 @@
     .consult-img{
         height: 105%;
         width: auto;
+    }
+    .clients-sec h1{
+        font-size: 2rem;
+    }
+    .testimonials{
+       margin-top: 4rem;
+    }
+    .testimonial{
+        width: 100%;
     }
 }

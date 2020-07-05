@@ -106,7 +106,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 				display:flex;
 				flex-direction:column;
 				\">
-					<h3 style=\"margin:14px;\">Opps...Error occured.! PLease Enter a name with laters and spaces and a valid Email format.\n Click Go Back button to go back.</h3>
+					<h3 style=\"margin:14px;\">Opps...Error occured.! PLease Enter a valid Email to request a service.\n Click Go Back button to go back.</h3>
 					<a href=\"index.html\" style=\"padding:15px;background:black;color:white;border-radius: 8px;text-decoration:none;\">Go Back</a>
 				</div>";
 		/*echo "
