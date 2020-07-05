@@ -55,6 +55,7 @@ input,textarea,button{
     outline: none;
 }
 button,a{
+    position: relative;
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -62,6 +63,14 @@ button,a{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+.ripple{
+    position: absolute;
+    background: white;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: buttonhover .5s linear infinite;
 }
 
 main > div{

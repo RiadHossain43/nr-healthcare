@@ -1,3 +1,5 @@
+import * as Anim from './anim.js'
+
 let set_style = (elem, styles) => Object.assign(elem.style, styles)
 window.addEventListener('load', () => {
     const body = document.querySelector('body')
@@ -85,7 +87,7 @@ window.addEventListener('load', () => {
     }
 
     
-
+    Anim.btnEfct()
 
 
 
