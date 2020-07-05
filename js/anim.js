@@ -13,7 +13,7 @@ function btnEfct() {
             let ripples = Util.crtEle('span')
             Util.addStyel(ripples, 'ripple')
             Util.set_style(ripples, { left: `${X}px`, top: `${Y}px` })
-            this.appendChild(ripples)
+            e.target.appendChild(ripples)
             setTimeout(() => {
                 ripples.remove()
             }, 500)
