@@ -97,7 +97,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 				display:flex;
 				flex-direction:column;
 				\">
-					<h3 style=\"margin:14px;\">Opps...Error occured.! Name or Email might be invalid formate\n Click Go Back button to go back.</h3>
+					<h3 style=\"margin:14px;\">Opps...Error occured.! Name or Email might be invalid format\n Click Go Back button to go back.</h3>
 					<a href=\"index.html\" style=\"padding:15px;background:black;color:white;border-radius: 8px;text-decoration:none;\">Go Back</a>
 				</div>";
 		/*echo "
