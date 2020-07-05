@@ -5,7 +5,6 @@
     --theme-color: #005eb8;
     --sublinks-color:#1565C0;
 }
-
 *{
     margin: 0;
     padding: 0;
@@ -18,9 +17,17 @@
 }
 body{
     box-sizing: border-box;
-    overflow-x: hidden;
+    overflow: hidden;
     font-family: Roboto,cursive;
     width: 100%;
+}
+.container{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    /* background-color: white; */
 }
 /*---------global classes---------*/
 .flex-row{
@@ -60,7 +67,8 @@ main > div{
     padding: 5rem;
 }
 ::-webkit-scrollbar{
-	width: 5px;
+    width: 5px;
+    
 }
 ::-webkit-scrollbar-track
 {
@@ -205,6 +213,7 @@ header{
     padding-top: .2rem;
     border-top: 2px solid rgba(233,30,99,1);
 }
+
 .drop-down{
     display: inline-block;
     transition: .5s;
