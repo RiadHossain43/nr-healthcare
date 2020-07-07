@@ -331,14 +331,21 @@ header{
 /*-----------X------------footer------------X------------*/
 
 
+@media only screen and (max-width:1048px) {
+    .brand-name img{
+        height: 45%;
+        margin: auto 0rem auto 4rem; 
+    }
+}
+
 @media only screen and (max-width:992px) {
     .brand-name,.nav,.social{
         height: 15vh;
         overflow: hidden;
     }
     .brand-name img{
-        height: 60%;
-        margin: auto 4rem; 
+        height: 50%;
+        margin: auto  4rem; 
     }
     header,.links{
         flex-direction: column;
@@ -482,34 +489,7 @@ header{
     .title p{
         font-size: 1rem;
     }
-    .device-imgs-container{
-        height: 50vh;
-        width: 100%;
-        margin: auto;
-    }
-    .device-imgs{
-        position: relative;
-        height: 80%;
-        width: 80%;
-    }
-    .device-imgs > img:nth-child(1){
-        position: absolute;
-        height: 70%;
-        top: 20%;
-        left: 10%;
-    }
-    .device-imgs > img:nth-child(2){
-        position: absolute;
-        height: 30%;
-        top: 55%;
-        left: 3%;
-    }
-    .device-imgs > img:nth-child(3){
-        position: absolute;
-        height: 50%;
-        top: 45%;
-        left: 53%;
-    }
+    
     .footer{
         padding: 1.5rem 0;
     }
