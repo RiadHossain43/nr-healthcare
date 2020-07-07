@@ -332,13 +332,56 @@ header{
 
 
 @media only screen and (max-width:992px) {
+    .brand-name,.nav,.social{
+        height: 15vh;
+        overflow: hidden;
+    }
     .brand-name img{
-        height: 33%;
-        width: auto;
-        margin: auto 2rem;
-    } 
+        height: 60%;
+        margin: auto 4rem; 
+    }
+    header,.links{
+        flex-direction: column;
+    }
+    .menu-btn{
+        display: flex;
+    }
+    .brand-name img{
+        margin: auto 1rem;
+    }
     .nav{
-        margin:0 2rem;
+        height: 0;
+        overflow-y: scroll;
+        margin:0rem;
+    }
+    .nav-expand{
+        height:60vh; 
+    }
+    .sub-links{
+        position: static;
+    }
+    .social-link{
+        margin:1rem;
+    }
+    .links{
+        height: 100%;
+        margin: 1rem 0;
+    }
+    .link{
+        margin: .5rem 0 auto;
+    }
+    .link>a{
+        margin: auto 1.5rem;
+        font-size: 1.2rem;
+        transition: .5s;
+        padding-top: 0;
+        border-top: none;
+    }
+    .sub-links{
+        margin-left: 1.5rem;
+    }
+    .drop-down{
+        display: inline-block;
     }
 }
 
@@ -383,10 +426,6 @@ header{
     .nav-expand{
         height:60vh; 
     }
-    .social{
-        height: auto;
-        justify-content: start;
-    } 
     .sub-links{
         position: static;
     }
