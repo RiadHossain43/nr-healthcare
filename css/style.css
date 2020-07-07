@@ -148,6 +148,7 @@ header{
 }
 .brand-name,.nav,.social{
     height: 20vh;
+    display: inline;
 }
 .brand-name a{
     height: 100%;
