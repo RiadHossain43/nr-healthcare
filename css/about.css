@@ -48,10 +48,15 @@
         height:auto;
         width: 100%;
         padding: 1rem;
+        text-align: left;
     }
     .about-info>h1{
         font-size: 1.4rem;
         margin-bottom: .4rem;
+    }
+    .about-info>p{
+        font-size: 1rem;
+        margin: .2rem;
     }
     .about-visuals{
         height: 45vh;
