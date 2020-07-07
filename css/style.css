@@ -148,7 +148,6 @@ header{
 }
 .brand-name,.nav,.social{
     height: 20vh;
-    display: inline;
 }
 .brand-name a{
     height: 100%;
@@ -158,6 +157,10 @@ header{
     height: 50%;
     width: auto;
     margin: auto 4rem;
+}
+.nav{
+    transition: .3s;
+    margin:0 5rem;
 }
 .menu-btn{
     position: relative;
@@ -205,10 +208,7 @@ header{
 .menu-open .menu-btn-burger::after{
     transform: rotate(-45deg) translate(5px,5px);
 }
-.nav{
-    transition: .3s;
-    margin:0 5rem;
-}
+
 .links{
     height: 30%;
     /* background-color: red; */
