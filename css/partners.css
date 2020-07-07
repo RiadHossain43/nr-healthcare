@@ -1,0 +1,10 @@
+.partner-heroimg-cont{
+    position: absolute;
+    width: 150%;
+    height: 60vh;
+    z-index: -3;
+    overflow: hidden;
+}
+.partner-heroimg-cont img{
+    height: 100%;
+}
