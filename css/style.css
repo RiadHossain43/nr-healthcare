@@ -285,7 +285,7 @@ header{
     justify-content: center;
     align-items: center;
 } 
-.title-style{
+/* .title-style{
     position: absolute;
     height: 100%;
     width: 100%;
@@ -293,19 +293,19 @@ header{
     border-radius:74% 26% 34% 70% / 43% 19% 77% 58%;
     animation: float 20s ease infinite;
     z-index: -1;
-}
+} */
 .title{
     padding: 0 2rem;
 }
 .title h2{
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 1rem 0;
 }
 .title h1{
-    font-size: 5rem;
+    font-size: 4rem;
 }
 .title p{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .work-sec-link{
     display: inline-block;
