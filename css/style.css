@@ -156,11 +156,11 @@ header{
 .brand-name img{
     height: 50%;
     width: auto;
-    margin: auto 2rem 0 4rem;
+    margin: auto 2rem auto 4rem;
 }
 .nav{
     transition: .3s;
-    margin:0 4rem 0 1rem;
+    margin:0 3rem 0 1rem;
 }
 .menu-btn{
     position: relative;
@@ -314,73 +314,7 @@ header{
     margin: 1rem 0;
     border-radius: 5px;
 }
-/* .device-imgs-container{
-    position: relative;
-    height: 100%;
-    width: 45%;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    border-radius:35% 49% 46% 39% / 37% 44% 39% 43% ;
-}
-.div-img-style{
-    position: absolute;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: #E8EAF6;
-    border-radius:35% 49% 46% 39% / 37% 44% 39% 43% ;
-    animation: float 6s ease infinite;
-    z-index: -2;
-    animation: rotation 60s infinite;
-}
-.device-imgs{
-    position: relative;
-    height: 80%;
-    width: 80%;
-}
-.device-imgs > img:nth-child(1){
-    position: absolute;
-    height: 100%;
-    top: 20%;
-    left: 10%;
-} */
-/* .device-imgs > img:nth-child(2){
-    position: absolute;
-    height: 30%;
-    top: 55%;
-    left: 3%;
-}
-.device-imgs > img:nth-child(3){
-    position: absolute;
-    height: 50%;
-    top: 45%;
-    left: 53%;
-} */
 
-/*--------------services-----------------*/
-
-/*-------X-------services----------X-------*/
-
-
-/*---------------projects----------------*/
-
-/*--------x-------projects---------x-------*/
-
-
-/*---------------------blogs-----------------*/
-
-
-/*---------X------------blogs--------X---------*/
-/*-----------------------contact------------------------*/
-
-
-
-/*-----------X------------contact------------X------------*/
-
-/*------------------------about-------------------------*/
-
-/*-----------X------------about------------X------------*/
 
 /*-----------------------footer------------------------*/
 .footer{
