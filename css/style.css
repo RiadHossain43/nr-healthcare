@@ -156,7 +156,7 @@ header{
 .brand-name img{
     height: 50%;
     width: auto;
-    margin: auto 4rem;
+    margin: auto 2rem 0 4rem;
 }
 .nav{
     transition: .3s;
