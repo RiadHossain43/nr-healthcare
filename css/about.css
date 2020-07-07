@@ -13,6 +13,7 @@
 }
 .about-info>p{
     font-size: 1.3rem;
+    margin: 1.5rem;
 }
 .about-visuals{
     position: relative;
@@ -29,9 +30,11 @@
 }
 .video{
     transform: translate(-55%,-45%);
+    overflow: hidden;
 }
 .my-video{
     width: 100%;
+    /* border-left: 10px solid #333333; */
 }
 .video-design{
     transform: translate(-45%,-55%);

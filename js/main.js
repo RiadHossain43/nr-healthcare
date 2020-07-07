@@ -16,7 +16,7 @@ window.addEventListener('load', () => {
     
 
     let requests = ['Risk Assessments', '27002 Controls Implementation', 'Independent Audits',
-        'Awareness and Training', 'Management Reviews', 'Continual Improvement Planning']
+        'Awareness and Training', 'Management Reviews', 'Continual Improvement Planning','Transformation']
 
 
     setTimeout(function () {
@@ -26,9 +26,15 @@ window.addEventListener('load', () => {
         viewport.setAttribute("content", "height=" + viewheight + "px, width=" + viewwidth + "px, initial-scale=1.0");
     }, 300);
 
+    let menu_open = false
     menu_btn.addEventListener('click', () => {
+        if(!menu_open){
+            gsap.from('.link',{duration:1,opacity:0,x:'-10%',delay:.3,stagger:.2})
+            menu_open = true
+        }else menu_open =false
         nav.classList.toggle('nav-expand')
         menu_btn.classList.toggle('menu-open')
+       
     })
     drop_down.addEventListener('click', () => {
         drop_down.classList.toggle('up')
