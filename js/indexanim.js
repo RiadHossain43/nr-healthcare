@@ -8,4 +8,5 @@ window.addEventListener('load', () => {
         .from('.title h2', { y: '25%', opacity: 0, duration: .5 })
         .from('.title p', { y: '25%', opacity: 0, duration: .5 })
         .from('.title a', { y: '25%', opacity: 0, duration: .5 })
+        .from('.brand-name a',{y:'130%',rotation:720})
 })
