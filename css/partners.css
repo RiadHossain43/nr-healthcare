@@ -1,10 +1,82 @@
 .partner-heroimg-cont{
-    position: absolute;
-    width: 150%;
+    position: relative;
     height: 60vh;
     z-index: -3;
     overflow: hidden;
 }
+.partners-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 5rem;
+    color: white;
+}
 .partner-heroimg-cont img{
     height: 100%;
+}
+.petner-logo-container{
+    width: 70%;
+    background:rgba(255,255,255,.9);
+    height: 40vh;
+    margin: 0 auto;
+    transform: translateY(-40%);
+    padding: 0;
+}
+.part-logo{
+    width: 32%;
+    height: 100%;
+    overflow: hidden;
+    margin: auto;
+}
+.part-logo img{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+.partner-about{
+    height: auto;
+    padding: 0 3rem auto;
+}
+.partner-detail{
+    width: 60%;
+    margin: auto 1rem;
+    overflow: hidden;
+    transform: translateY(-30%);
+    padding: auto 5rem;
+    font-size: 2rem;
+}
+
+@media only screen and (max-width:992px) {
+    .petner-logo-container{
+        width: 80%;
+        height: auto;
+        flex-direction: column;
+        transform: translateY(-20%);
+    }
+    .partners-title{
+        font-size: 3rem;
+    }
+    .part-logo{
+        width: 100%;
+        margin:0 0 1rem;
+    }
+    .part-logo img{
+        position: relative;;
+        width: 100%;
+        top: auto;
+        transform: translateY(0%);
+    }
+    .partner-about{
+        height: auto;
+        padding: 0 1rem auto;
+    }
+    .partner-detail{
+        width: 100%;
+        margin: auto 1rem;
+        transform: translateY(-25%);
+        padding: auto .5rem;
+        font-size: 1rem;
+    }
 }
