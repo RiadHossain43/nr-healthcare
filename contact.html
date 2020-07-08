@@ -56,10 +56,15 @@
         <main>
 
             <!-----------------------------------------------hire------------------------------------------------------------------------->
-
+            <div class="contact-style-container">
+                <div class="contact-style">
+                
+                </div>
+            </div>
             <div class="hire">
                 <h1 class="hire-title">Keep In Touch. What do you need ?</h1>
-                <form action="contact.php" id="contact_form" method="POST">
+                <p><img src="./assets/contact/mail1.svg" class="inline-mail" alt=""> Email us || info@nrhealthcare.net</p>
+                <form action="contact.php" class="flex-row" id="contact_form" method="POST">
                     <div id="send_msg">
                         <div class="half_width field"><input class="input" type="text" name="name" id="country"
                                 placeholder="Name"></div>
@@ -75,28 +80,17 @@
                         </div>
                     </div>
                     <div id="contact_info">
-                        <div class="contact_typ">
-                            <p>Phone<i class="fas fa-phone"></i></p>
-                            <p>+321354154</p>
-                            <p>+321354154</p>
-                        </div>
-                        <div class="contact_typ">
-                            <p>Email<i class="fas fa-envelope"></i></p>
-                            <p>info@info.com</p>
-                            <p>comapny@company.com</p>
-                        </div>
-                        <div class="contact_typ">
-                            <p>Main Office <i class="fas fa-map-marker-alt"></i></p>
-                            <p>Address 123/4 road 3 block</p>
-                            <p>City postal code country</p>
-                        </div>
+                        <img src="./assets/contact/mail3.svg" class="email-hero" alt="">
+                        <img src="./assets/contact/mail3.svg" class="email-hero" alt="">
+                        <img src="./assets/contact/mail3.svg" class="email-hero" alt="">
                     </div>
                 </form>
+                
             </div>
 
             <!------------------------X-----------------------hire-------------------------------------------X------------------------------>
 
-
+            
             <!-----------------------------------------------footer------------------------------------------------------------------------>
 
             <div class="footer">
@@ -128,6 +122,8 @@
     <!--------------------import javascript------------------>
     <script defer type="module" src="./js/main.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+    <script defer type="module" src="./js/contactanim.js"></script>
+
 </body>
 
 </html>
