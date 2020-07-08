@@ -152,6 +152,7 @@ header{
 .brand-name a{
     height: 100%;
     display: flex;
+   
 }
 .brand-name img{
     height: 50%;
