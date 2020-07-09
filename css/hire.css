@@ -12,7 +12,7 @@
 }
 .contact-style-container{
     position: absolute;
-    height: 120vh;
+    /* height: 120vh; */
     overflow: hidden;
     width: 150%;
     padding: 0;
@@ -23,7 +23,7 @@
     height: 100vh;
     width: 150%;
     top: 10%;
-    background-color: var(--theme-color);
+    background-color: #f1f1f1;
     transform: skewY(-15deg);
    
 }
@@ -50,9 +50,9 @@
     border-radius: 7px;
     background: white;
     padding: 2rem .5rem;
-    -webkit-box-shadow: 0px 9px 23px -6px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 9px 23px -6px rgba(0,0,0,0.75);
-    box-shadow: 0px 9px 23px -6px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 17px 29px -13px rgba(184,127,184,1);
+    -moz-box-shadow: 0px 17px 29px -13px rgba(184,127,184,1);
+    box-shadow: 0px 17px 29px -13px rgba(184,127,184,1);
 }
 #contact_info{
     position: relative;
@@ -80,17 +80,18 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    
 }
 .email-hero:nth-of-type(1){
-    transform: translate(-40%,-40%);
+    transform: translate(-45%,-45%);
     opacity: .2;
 }
 .email-hero:nth-of-type(2){
-    transform: translate(-45%,-45%);
+    transform: translate(-50%,-50%);
     opacity: .5;
 }
 .email-hero:nth-of-type(3){
-    transform: translate(-50%,-50%);
+    transform: translate(-55%,-55%);
     opacity: 1;
 }
 .input{
@@ -156,7 +157,7 @@ textarea:focus{
 }
 @media screen and (max-width:768px){
     .contact-style-container{
-        height: 160vh;
+        /* height: 160vh; */
     }
     .contact-style{
         top: 30%;
