@@ -80,8 +80,11 @@
 
 
 @media only screen and (max-width:992px) {
+    .partners-title{
+        transform: translate(-50%,-70%);
+    }
     .partner-content{
-        transform: translateY(-3%);
+        transform: translateY(-5%);
         padding: 0  1rem;
     }
     .partner-heroimg-cont{
