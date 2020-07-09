@@ -129,8 +129,7 @@ textarea:focus{
     border: 1px solid var(--input-focus-color);
 }
 .submit_btn{
-    padding: 1em;
-    /* border: 1px solid var(--input-border-color); */
+    padding: 1rem;
     width: 20%;
     color: white;
     border-radius: 5px;
@@ -162,15 +161,16 @@ textarea:focus{
     }
     #send_msg, #contact_info{
         width:100%;
+        padding: 1rem;
     }
     .contact_typ{
         margin: 1em 0;
     }
 }
 @media screen and (max-width:768px){
-    .contact-style-container{
-        /* height: 160vh; */
-    }
+    /* .contact-style-container{
+        height: 160vh;
+    } */
     .contact-style{
         top: 30%;
     }
@@ -190,11 +190,11 @@ textarea:focus{
         font-size: .9rem;
     }
     #send_msg{
-        padding: .5rem;
+        padding:1rem .5rem;
     }
     .submit_btn{
         padding: 1em;
-        width:auto;
+        width:100%;
     }
     .hire{
         padding:1rem 1rem;
