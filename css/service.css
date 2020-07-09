@@ -103,18 +103,18 @@
     justify-content: center;
     cursor: default;
     flex-wrap: wrap;
-    margin-top: 3rem;
 }
 .testimonial{
     position: relative;
-    margin: .4rem;
+    margin: .6rem;
     width: 26vw;
+    /* background-color: red; */
 }
 .quote{
     width: 100%;
     margin: 0 auto;
     padding: 1rem 2rem;
-    transform: translateY(-30%);
+    /* background-color: red; */
     z-index: -1;
 }
 .client-img-wrap{
@@ -122,10 +122,9 @@
     height: 8rem;
     border-radius: 50%;
     margin: 0 auto;
-    background-color: white;
+    background: white;
 }
 .client-img{
-    /* background-color: red; */
     width: 90%;
     height: 90%;
     border-radius: 50%;
@@ -142,6 +141,7 @@
     height: 70%;    
     background:#e8eaf6;
     border-radius: 10px;
+    bottom: 0;
     z-index: -1;
 }
 .testimonial:hover .quote-q{
@@ -214,9 +214,6 @@
     }
     .clients-sec h1{
         font-size: 2rem;
-    }
-    .testimonials{
-       margin-top: 6rem;
     }
     .testimonial{
         width: 100%;
