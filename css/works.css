@@ -93,8 +93,8 @@
 .req_form_container{
     position: fixed;
     display: none;
-    height: 0vh;
-    width: 50%;
+    height: auto;
+    width:0%;
     top: 50%;
     left:50%;
     transform: translate(-50%,-50%);
@@ -113,7 +113,6 @@
     flex-wrap: wrap;
 }
 
-
 .req_back{
     font-size: 1.5rem;
     background: transparent;
@@ -130,6 +129,7 @@
 }
 .req_form_container>h2{
     text-align: center;
+    margin: 1rem 0;
 }
 
 @media only screen and (max-width:768px) {
@@ -160,8 +160,7 @@
         transform: translate(-10%,0);
     }
     .req_form_container{
-        padding: 1rem;
-        height: 85vh;
+        padding: .5rem;
         width: 90%;
     }
     .req_form_container>h2{
@@ -169,6 +168,9 @@
     }
     .req_form_container>input{
         font-size: .9rem;
+    }
+    .req_form_container>h2{
+        margin: .5rem 0 1rem;
     }
     .req-form{
         width: 100%;

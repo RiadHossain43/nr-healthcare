@@ -192,6 +192,10 @@ textarea:focus{
     #send_msg{
         padding: .5rem;
     }
+    .submit_btn{
+        padding: 1em;
+        width:auto;
+    }
     .hire{
         padding:1rem 1rem;
     }

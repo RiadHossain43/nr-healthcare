@@ -54,7 +54,8 @@ window.addEventListener('load', () => {
        
         set_style(req_form_container, { display: 'block', opacity: 0 })
         setTimeout(() => {
-            set_style(req_form_container, { opacity: 1, height: '85vh' })
+            let width_control = window.innerWidth < 768 ? 90:50
+            set_style(req_form_container, { width:`${width_control}%`,opacity: 1})
         }, 20)
 
         req_form_container.innerHTML = `
@@ -82,11 +83,12 @@ window.addEventListener('load', () => {
         req_form.setAttribute('action','service_request.php')
         req_back.forEach(btn => {
             btn.addEventListener('click', (e) => {
-                set_style(req_form_container, { height: '0%', opacity: 0 })
+                set_style(req_form_container, {width:'0%',opacity:0})
                 setTimeout(() => {
                     set_style(req_form_container, { display: 'none' })
-                }, 200)
-                req_form_container.innerHTML = ''
+                    req_form_container.innerHTML = ''
+                },300)
+                
             })
         })
 
