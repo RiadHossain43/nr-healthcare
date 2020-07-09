@@ -9,3 +9,4 @@ timeline
     .from('.field',{y:'50%',opacity:0,stagger:.3})
     .from('.email-hero',{y:'10%',x:'10%',opacity:0,stagger:.3},2)
     .from('.contact-style',{y:'40%',opacity:0,ease:'bounce'})
+    .from('.inline-mail',{rotation:720,duration:.5})
