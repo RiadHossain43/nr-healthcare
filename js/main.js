@@ -52,7 +52,7 @@ window.addEventListener('load', () => {
 
     function requestService(btn, i) {
        
-        set_style(req_form_container, { display: 'none', opacity: 0 })
+        set_style(req_form_container, { display: 'block', opacity: 0 })
         setTimeout(() => {
             set_style(req_form_container, { opacity: 1, height: '85vh' })
         }, 20)
