@@ -7,6 +7,9 @@
     z-index: -3;
     overflow: hidden;
 }
+.partners-description{
+    padding: 0 5rem;
+}
 .partners-title{
     position: absolute;
     top: 50%;
@@ -16,7 +19,7 @@
     color: white;
 }
 .partner-content{
-    transform: translateY(-9%);
+    transform: translateY(0%);
     padding: 0  5rem;
     
 }
@@ -50,8 +53,12 @@
     transform: translate(20%,0);
 }
 .partner-card:nth-of-type(3) .partner-post-img{
-    height:20%;
+    height:25%;
     transform: translate(-25%,0);
+}
+.partner-card:nth-of-type(4) .partner-post-img{
+    height: 40%;
+    transform: translate(20%,0);
 }
 .partner-post-info{
     margin: 0 1rem; 
@@ -84,7 +91,7 @@
         transform: translate(-50%,-100%);
     }
     .partner-content{
-        transform: translateY(-5%);
+        transform: translateY(0%);
         padding: 0  1rem;
     }
     .partner-heroimg-cont{
@@ -119,9 +126,9 @@
     .partner-card:nth-of-type(3) .partner-post-img{
         transform: translate(0,-30%);
     }
+    
     .partner-post-info{
         margin: 0 1rem; 
-        /* border-left: 2px solid #7986CB; */
     }
     .partner-title{
         margin-bottom: 1rem;
