@@ -30,7 +30,7 @@ window.addEventListener('load', () => {
     let menu_open = false
     menu_btn.addEventListener('click', () => {
         if(!menu_open){
-            gsap.from('.link',{duration:1,opacity:0,x:'-10%',delay:.3,stagger:.2})
+            gsap.from('.link',{duration:1,opacity:0,x:'-10%',delay:.1,stagger:.1})
             menu_open = true
         }else menu_open =false
         nav.classList.toggle('nav-expand')
