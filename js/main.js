@@ -1,4 +1,5 @@
 import * as Anim from './anim.js'
+import * as Util from './util.js'
 
 let set_style = (elem, styles) => Object.assign(elem.style, styles)
 window.addEventListener('load', () => {
@@ -54,8 +55,8 @@ window.addEventListener('load', () => {
        
         set_style(req_form_container, { display: 'block', opacity: 0 })
         setTimeout(() => {
-            let width_control = window.innerWidth < 768 ? 90:50
-            set_style(req_form_container, { width:`${width_control}%`,opacity: 1})
+            // let width_control = window.innerWidth < 768 ? 90:50
+            set_style(req_form_container, {opacity: 1})
         }, 20)
 
         req_form_container.innerHTML = `
@@ -69,21 +70,22 @@ window.addEventListener('load', () => {
                     <div class="full_width field req-f"><input class="input" type="text" name="email" id="Email"
                             placeholder="Email"></div>
                     <div class="full_width field req-f"><input class="input" type="text" name="organization" id="organization"
-                            placeholder="Organisation"></div>
+                            placeholder="Organization"></div>
                     <div class="full_width field req-f"><input class="input" type="hidden" name="subject" id="company"
                             placeholder="Subject" value="Service request for ${requests[i]}"></div>
                     <div class="full_width field req-f"><textarea name="notes" id="about_product"
-                            placeholder="Write short notes ..."></textarea></div>
+                            placeholder="Leave notes ..."></textarea></div>
                     <div class="full_width field"><button class="submit_btn">Request</button>
                     </div>
                 </form>
+                
                 `
         let req_back = document.querySelectorAll('.req_back')
         let req_form = document.querySelector('.req-form')
         req_form.setAttribute('action','service_request.php')
         req_back.forEach(btn => {
             btn.addEventListener('click', (e) => {
-                set_style(req_form_container, {width:'0%',opacity:0})
+                set_style(req_form_container, {opacity:0})
                 setTimeout(() => {
                     set_style(req_form_container, { display: 'none' })
                     req_form_container.innerHTML = ''
@@ -93,14 +95,9 @@ window.addEventListener('load', () => {
         })
 
     }
-
-    
     Anim.btnEfct()
 
-
-
-
-
+    
 
 
 

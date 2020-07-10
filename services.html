@@ -7,6 +7,8 @@
     <title>SERVICES</title>
     <link rel="shortcut icon" type="image/png" href="./assets/logo/favicon.png">
     <script src="https://kit.fontawesome.com/426991ed3e.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/service.css">
     <link rel="stylesheet" href="./css/works.css">
@@ -105,7 +107,8 @@
 
                 <div class="risk-assesment-wrapper">
 
-                    <div class="project centralize-childs flex-column" id="rsk_ass">
+                    <div class="project centralize-childs flex-column" id="rsk_ass" data-aos="fade-right"
+                        data-aos-offset="200" data-aos-duration="1000">
                         <img src="./assets/services/assesment.svg" class="service-img" alt="">
                         <h2 class="service-name">Risk Assessment</h2>
                         <p class="service-short-dt-s">
@@ -115,7 +118,8 @@
                         </p>
                         <button class="make_req">Request Service</button>
                     </div>
-                    <div class="project centralize-childs flex-column" id="ctrl">
+                    <div class="project centralize-childs flex-column" id="ctrl" data-aos="fade-left"
+                        data-aos-offset="200" data-aos-duration="1000">
                         <img src="./assets/services/control.svg" class="service-img" alt="">
                         <h2 class="service-name">27002 Controls Implementation</h2>
                         <p class="service-short-dt-s">
@@ -125,7 +129,8 @@
                         </p>
                         <button class="make_req">Request Service</button>
                     </div>
-                    <div class="project centralize-childs flex-column" id="ind_aud">
+                    <div class="project centralize-childs flex-column" id="ind_aud" data-aos="fade-right"
+                        data-aos-offset="200" data-aos-duration="1000">
                         <img src="./assets/services/audit.svg" class="service-img" alt="">
                         <h2 class="service-name">Independent Audits</h2>
                         <p class="service-short-dt-s">
@@ -135,7 +140,8 @@
                         </p>
                         <button class="make_req">Request Service</button>
                     </div>
-                    <div class="project centralize-childs flex-column" id="">
+                    <div class="project centralize-childs flex-column" id="" data-aos="fade-left" data-aos-offset="200"
+                        data-aos-duration="1000">
                         <img src="./assets/services/aware.svg" class="service-img" alt="awr">
                         <h2 class="service-name">Awareness and Training</h2>
                         <p class="service-short-dt-s">
@@ -145,7 +151,8 @@
                         </p>
                         <button class="make_req">Request Service</button>
                     </div>
-                    <div class="project centralize-childs flex-column" id="mng">
+                    <div class="project centralize-childs flex-column" id="mng" data-aos="fade-right"
+                        data-aos-offset="200" data-aos-duration="1000">
                         <img src="./assets/services/manage.svg" class="service-img" alt="">
                         <h2 class="service-name">Management Reviews</h2>
                         <p class="service-short-dt-s">
@@ -155,7 +162,8 @@
                         </p>
                         <button class="make_req">Request Service</button>
                     </div>
-                    <div class="project centralize-childs flex-column" id="pln">
+                    <div class="project centralize-childs flex-column" id="pln" data-aos="fade-left"
+                        data-aos-offset="200" data-aos-duration="1000">
                         <img src="./assets/services/plan.svg" class="service-img" alt="">
                         <h2 class="service-name">Continual Improvement Planning </h2>
                         <p class="service-short-dt-s">
@@ -164,7 +172,8 @@
                         </p>
                         <button class="make_req">Request Service</button>
                     </div>
-                    <div class="project centralize-childs flex-column" id="pln">
+                    <div class="project centralize-childs flex-column" id="pln" data-aos="fade-right"
+                        data-aos-offset="200" data-aos-duration="1000">
                         <img src="./assets/services/plan.svg" class="service-img" alt="">
                         <h2 class="service-name">Transformation</h2>
                         <p class="service-short-dt-s">
@@ -231,9 +240,13 @@
 
 
     <!--------------------import javascript------------------>
-    <script defer type="module" src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+    <script defer type="module" src="./js/main.js"></script>
     <script defer type="module" src="./js/serviceAnim.js"></script>
+    <script defer type="module" src="./js/aos.js"></script>
+    
+
 </body>
 
 </html>

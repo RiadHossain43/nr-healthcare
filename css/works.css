@@ -94,7 +94,7 @@
     position: fixed;
     display: none;
     height: auto;
-    width:0%;
+    width:50%;
     top: 50%;
     left:50%;
     transform: translate(-50%,-50%);
@@ -103,7 +103,7 @@
     z-index: 3;
     padding: 1rem;
     overflow: hidden;
-    transition: .3s;
+    transition: .5s;
     opacity: 0;
 }
 .req-form{
