@@ -15,7 +15,7 @@
 }
 .contact-style-container{
     position: absolute;
-    /* height: 120vh; */
+    height: 120vh;
     overflow: hidden;
     width: 150%;
     padding: 0;
@@ -168,9 +168,9 @@ textarea:focus{
     }
 }
 @media screen and (max-width:768px){
-    /* .contact-style-container{
-        height: 160vh;
-    } */
+    .contact-style-container{
+        height: 150vh;
+    }
     .contact-style{
         top: 30%;
     }
