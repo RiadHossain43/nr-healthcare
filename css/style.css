@@ -444,7 +444,7 @@ header{
         display: flex;
     }
     .brand-name a{
-        width: 50%;
+        width: 40%;
     }
     .brand-name img{
         margin: auto 1rem;
