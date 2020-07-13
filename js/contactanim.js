@@ -1,6 +1,6 @@
 const timeline = gsap.timeline({ defaults: { duration: .7 } })
 const cont_style_cont = document.querySelector('.contact-style-container')
-cont_style_cont.style.height = `${document.querySelector('main').offsetHeight}px`
+cont_style_cont.style.height = `${document.querySelector('main').offsetHeight*.8}px`
 
 timeline
     .from('.hire-title', { y: '100%', ease: 'bounce' })
