@@ -224,8 +224,10 @@ header{
     /* background-color: red; */
     margin: auto 0;
 }
+
 .link>a{
     position: relative;
+    width: 100%;
     margin: auto 1.5rem;
     font-size: 1.2rem;
     transition: .5s;
@@ -355,6 +357,9 @@ header{
 }
 
 @media only screen and (max-width:992px) {
+    main > div{
+        padding: 2.3rem;
+    }
     .brand-name,.nav,.social{
         height: 15vh;
         overflow: hidden;
@@ -437,6 +442,9 @@ header{
     }
     .menu-btn{
         display: flex;
+    }
+    .brand-name a{
+        width: 35%;
     }
     .brand-name img{
         margin: auto 1rem;

@@ -81,6 +81,9 @@
     width: 115%;
     transition: .3s;
     opacity: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 .clients-sec{
     position: relative;
@@ -161,9 +164,26 @@
     color: #333333;
     margin:0 .2rem;
 }
-@media only screen and (max-width:768px){
+@media only screen and (max-width:1024px){
     .testimonial{
         width: 45%;
+    }
+    .service-wrapper{
+        width: 100%;
+    }
+    .service{
+        height: 20vh;
+    }
+}
+@media only screen and (max-width:992px){
+    .testimonial{
+        width: 45%;
+    }
+    .service-wrapper{
+        width: 100%;
+    }
+    .service{
+        height: 25vh;
     }
 }
 @media only screen and (max-width:768px) {
@@ -174,14 +194,14 @@
     }
     .service-wrapper{
         grid-template-columns: repeat(2,1fr);
-        width: 100%;
+        width: 90%;
     }
     .im_good_at{
         font-size: 2rem;
         padding: 1rem 0;
     }
     .service{
-        height: 25vh;
+        height: 30vh;
         margin: .3rem;
         padding: .6rem;
     }
@@ -216,5 +236,13 @@
     }
     .testimonial{
         width: 100%;
+    }
+}
+@media only screen and (max-width:480px) {
+    .service-wrapper{
+        width: 100%;
+    }
+    .service{
+        height: 25vh;
     }
 }
