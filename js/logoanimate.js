@@ -1,5 +1,5 @@
 
-const timeline = gsap.timeline({ defaults: { duration: .7 , delay:1} })
+const timeline = gsap.timeline({ defaults: { duration: .7 , delay:.8} })
 const SYNC = .1
 timeline
    .from('#Path_6',{ x:662,y:187.4,rotation:360,ease:'ease-out'}) //translate(128.5 476.044)
