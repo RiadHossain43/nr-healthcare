@@ -104,7 +104,8 @@
 }
 .read-more  i{
     color: rgba(236,64,122 ,1);
-    font-size: 2rem;
+    font-size: 1.1rem;
+    margin: 0 4px;
 }
 
 
