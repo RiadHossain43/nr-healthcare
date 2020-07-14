@@ -122,15 +122,16 @@ main > div{
     position: absolute;
     left:-5%;
     top: 75%;
-    height: 10rem;
+    height: 12rem;
     z-index: 1;
     opacity: .4;
+    
 }
 .style-icon-1:nth-of-type(2){
     position: absolute;
     right: -5%;
     top: 50%;
-    height: 10rem;
+    height: 12rem;
     z-index: 1;
     opacity: .4;
     transform: rotate(-45deg);
