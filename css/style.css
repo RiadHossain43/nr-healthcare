@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    line-height: 1.4;
 }
 *::before,*::after{
     margin: 0;
@@ -299,15 +300,7 @@ header{
     justify-content: center;
     align-items: center;
 } 
-/* .title-style{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: #E8EAF6;
-    border-radius:74% 26% 34% 70% / 43% 19% 77% 58%;
-    animation: float 20s ease infinite;
-    z-index: -1;
-} */
+
 .title{
     padding: 0 2rem;
 }
@@ -317,6 +310,7 @@ header{
 }
 .title h1{
     font-size: 4rem;
+    letter-spacing:2px;
 }
 .title p{
     font-size: 1.5rem;
