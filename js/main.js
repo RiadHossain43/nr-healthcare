@@ -13,11 +13,12 @@ window.addEventListener('load', () => {
     const drop_down = document.querySelector('.drop-down')
     const link = document.querySelectorAll('.link')
     const service = document.getElementById('service')
+    const container = document.querySelector('.container')
+    const header = document.querySelector('header')
 
-    
 
     let requests = ['Risk Assessments', '27002 Controls Implementation', 'Independent Audits',
-        'Awareness and Training', 'Management Reviews', 'Continual Improvement Planning','Transformation']
+        'Awareness and Training', 'Management Reviews', 'Continual Improvement Planning', 'Transformation']
 
 
     setTimeout(function () {
@@ -29,13 +30,13 @@ window.addEventListener('load', () => {
 
     let menu_open = false
     menu_btn.addEventListener('click', () => {
-        if(!menu_open){
-            gsap.from('.link',{duration:1,opacity:0,x:'-10%',delay:.1,stagger:.1})
+        if (!menu_open) {
+            gsap.from('.link', { duration: 1, opacity: 0, x: '-10%', delay: .1, stagger: .1 })
             menu_open = true
-        }else menu_open =false
+        } else menu_open = false
         nav.classList.toggle('nav-expand')
         menu_btn.classList.toggle('menu-open')
-       
+
     })
     drop_down.addEventListener('click', () => {
         drop_down.classList.toggle('up')
@@ -49,14 +50,21 @@ window.addEventListener('load', () => {
     // for (let i = 0; i < sub_link.length; i++) {
     //     sub_link[i].addEventListener('click', (e) => requestService(e, i))
     // }
-
+    let animatenav = () => {
+        // if (window.innerWidth > 992) {
+        //     if (container.scrollTop > 250)
+        //         Util.set_style(header, { height:`15vh` });
+        //     else
+        //         Util.set_style(header, { background: `var(--theme-color)` });
+        // }
+    }
 
     function requestService(btn, i) {
-       
+
         set_style(req_form_container, { display: 'block', opacity: 0 })
         setTimeout(() => {
             // let width_control = window.innerWidth < 768 ? 90:50
-            set_style(req_form_container, {opacity: 1})
+            set_style(req_form_container, { opacity: 1 })
         }, 20)
 
         req_form_container.innerHTML = `
@@ -82,22 +90,23 @@ window.addEventListener('load', () => {
                 `
         let req_back = document.querySelectorAll('.req_back')
         let req_form = document.querySelector('.req-form')
-        req_form.setAttribute('action','service_request.php')
+        req_form.setAttribute('action', 'service_request.php')
         req_back.forEach(btn => {
             btn.addEventListener('click', (e) => {
-                set_style(req_form_container, {opacity:0})
+                set_style(req_form_container, { opacity: 0 })
                 setTimeout(() => {
                     set_style(req_form_container, { display: 'none' })
                     req_form_container.innerHTML = ''
-                },300)
-                
+                }, 300)
+
             })
         })
 
     }
+    container.addEventListener('scroll', animatenav)
     Anim.btnEfct()
 
-    
+
 
 
 
