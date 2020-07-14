@@ -1,4 +1,6 @@
 
+
+
 const timeline = gsap.timeline({ defaults: { duration: .7 , delay:.8} })
 const SYNC = .1
 timeline
