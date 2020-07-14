@@ -1,7 +1,14 @@
 
 
 .about{
+    position: relative;
     background-color: #f1f1f1;
+}
+.about>img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: .1;
 }
 .about-info{
     height: 60vh;
