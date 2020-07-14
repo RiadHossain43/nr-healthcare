@@ -102,7 +102,10 @@
     border-radius: 3px;
     margin: 2rem 0;
 }
-
+.read-more  i{
+    color: rgba(236,64,122 ,1);
+    font-size: 2rem;
+}
 
 
 
