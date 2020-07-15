@@ -1,27 +1,111 @@
-#logo{
-    height: 40%;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-60%);
+.blogs{
+    padding:5rem 2rem;
+    background-color: #333333;
+    border-radius:0% 86% 10% 0% / 10% 72% 0% 1%  ;
 }
-#lg2dry{
-    height: 0;
-    overflow: hidden;
-} 
-#Path_5{
-    transform-origin: center;
-    transform-box:  fill-box;
+.blog-card{
+    width:50%;
+    margin: 2rem auto 2rem 3rem;
+    height: 60vh;
+    background-color:#E8EAF6;
+    padding: 2rem;
+    border-radius: 3px;
 }
-#Path_6{
-    transform-origin: center;
-    transform-box:  fill-box;
+.blog-post-img{
+    width: 25%;
+    height: 70%;
 }
-#Path_3{
-    transform-origin: center;
-    transform-box:  fill-box;
+.blog-post-img img{
+    height: 100%;
+    transform: translate(-50%,0);
 }
+.blog-post-info{
+    margin: 0 1rem; 
+    /* border-left: 2px solid #7986CB; */
+}
+.blog-post-date{
+    margin: 1rem 0;
+}
+.blog-title{
+    margin-bottom: 1rem;
+}
+.blog-p{
+    font-size: 1rem;
+}
+.read-more{
+    display: inline-block;
+    color: white;
+    background-color: #7986CB;
+    padding: 1rem;
+    border-radius: 3px;
+    margin: 2rem 0;
+}
+.blog-list{
+    width: 40%;
+    margin: auto;
+    height: 60vh;
+    overflow-y: scroll;
+    padding: 1rem;
+    color: white;
+}
+
+.blog-list-blog{
+    border-left: 1px solid white ;
+}
+.blog-list-date p{
+    background-color: #333333;
+    transform: translateX(-10%);
+    font-size: .8rem;
+}
+.blog-list-blog-content{
+    margin: 0 1rem;
+    padding-bottom: 2rem;
+}
+.blog-list-blog-title{
+
+}
+.blog-list-blog-p{
+    margin: .5rem 0;
+    font-size: 1rem;
+}
+.blog-list-expand{
+    color: chocolate;
+}
+
+
+
 
 @media only screen and (max-width:768px) {
-
+    .blogs{
+        border-radius:23% 4% 58% 9% / 44% 12% 28% 9% ;
+    }
+    .blogs,.blog-card{
+        flex-direction: column;
+    }
+    .blog-list{
+        width: 100%;
+        margin: 0;
+    }
+    .blog-card{
+        width: 100%;
+        height:auto;
+        margin:20vw 0 0;
+        padding: 1rem;
+    }
+    .blog-post-img{
+        width: 100%;
+        height:50vw;
+    }
+    .blog-post-img img{
+        width:100%;
+        height:auto;
+        transform: translate(0,-30%);
+    }
+    .blog-post-info{
+        margin: 0 1rem;
+    }
+    .blog-list-blog-content{
+        margin:0 0 0 .4rem;
+        padding-bottom: 2rem;
+    }
 }
