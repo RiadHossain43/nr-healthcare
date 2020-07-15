@@ -8,6 +8,8 @@ let crtEle = ele => document.createElement(ele)
 
 let addStyel = (ele,style)=> ele.classList.add(style) 
 
+let rmvStyel = (ele,style)=> ele.classList.remove(style) 
+
 let eleQRY = qry => document.querySelector(qry)
 
 let eleQRYAll = qry => document.querySelectorAll(qry)
@@ -34,5 +36,5 @@ function sound(src){
 }
 
 export{
-    eleID,eleCls,set_style,crtEle,addStyel,eleQRY,eleQRYAll,scroll_check,sound
+    eleID,eleCls,set_style,crtEle,addStyel,eleQRY,eleQRYAll,scroll_check,rmvStyel,sound
 }
