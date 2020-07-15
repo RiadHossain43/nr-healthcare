@@ -49,6 +49,16 @@
     margin: 2rem 0;
     transition: .5s;
 }
+.minimize{
+    display: none;
+    padding: 1rem;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 3px;
+}
+.read-more i{
+    margin:0 1rem;
+}
 .blog-list{
     width: 40%;
     margin: auto;
@@ -82,6 +92,7 @@
 }
 .blog-list-expand{
     color: chocolate;
+    background: transparent;
 }
 
 
