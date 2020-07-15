@@ -1,14 +1,18 @@
+:root{
+    --theme-color: #005eb8
+}
 .blogs{
     padding:5rem 2rem;
-    background-color: #333333;
+    background-color: #EDEDED;
     border-radius:0% 86% 10% 0% / 10% 72% 0% 1%  ;
 }
 
 .blog-card{
+    position: relative;
     width:50%;
     margin: 2rem;
     min-height: 60vh;
-    background-color:#E8EAF6;
+    background-color:white;
     padding: 2rem;
     border-radius: 3px;
     transition: .5s;
@@ -43,16 +47,17 @@
 .read-more{
     display: inline-block;
     color: white;
-    background-color: #7986CB;
+    background:var(--theme-color);
     padding: 1rem;
     border-radius: 3px;
     margin: 2rem 0;
     transition: .5s;
 }
 .minimize{
+    /* position: fixed; */
     display: none;
     padding: 1rem;
-    background-color: blueviolet;
+    background: var(--theme-color);
     color: white;
     border-radius: 3px;
 }
@@ -65,7 +70,7 @@
     height: 60vh;
     overflow-y: scroll;
     padding: 1rem;
-    color: white;
+   
     transition: .5s;
 }
 .blog-list-2dry{
@@ -74,10 +79,10 @@
     padding: 0rem;
 }
 .blog-list-blog{
-    border-left: 1px solid white ;
+    border-left: 1px solid black;
 }
 .blog-list-date p{
-    background-color: #333333;
+    background-color: #E7EBE9;
     transform: translateX(-10%);
     font-size: .8rem;
 }
@@ -100,9 +105,8 @@
 @media only screen and (max-width:768px) {
     .blogs{
         border-radius:23% 4% 58% 9% / 44% 12% 28% 9% ;
-    }
-    .blogs,.blog-card{
-        flex-direction: column;
+        flex-direction: column-reverse;
+        padding: 1rem .5rem;
     }
     .blog-list{
         width: 100%;
@@ -111,7 +115,7 @@
     .blog-card{
         width: 100%;
         height:auto;
-        margin:20vw 0 0;
+        margin: 0 0;
         padding: 1rem;
     }
     .blog-post-img{
