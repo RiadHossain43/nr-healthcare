@@ -41,8 +41,11 @@
     /* border-left: 2px solid #7986CB; */
 }
 .case_icon{
-    margin-left: 1rem;
-    height: 2rem;
+    position: absolute;
+    height: 40%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
 }
 .case_num{
     position: absolute;
@@ -95,6 +98,7 @@
     padding: 0rem;
 }
 .blog-list-blog{
+    position: relative;
     border-left: 1px solid black;
 }
 .blog-list-date p{
