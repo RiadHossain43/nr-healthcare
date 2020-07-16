@@ -14,7 +14,7 @@
 }
 .blog-card{
     position: relative;
-    width:50%;
+    width:55%;
     margin: 2rem;
     min-height: 60vh;
     background-color:white;
@@ -43,6 +43,10 @@
 .case_num{
     position: absolute;
     opacity: .1;
+}
+.case_logo{
+    height: 3rem;
+    margin: 1rem 0;
 }
 .blog-post-date{
     margin: 1rem 0;
@@ -74,7 +78,7 @@
     margin:0 1rem;
 }
 .blog-list{
-    width: 40%;
+    width: 25%;
     margin: auto;
     height: 60vh;
     overflow-y: scroll;
@@ -93,7 +97,7 @@
 .blog-list-date p{
     background-color: #f1f1f1;
     transform: translateX(-10%);
-    font-size: .8rem;
+    font-size: 1.1rem;
 }
 .blog-list-blog-content{
     margin: 0 1rem;

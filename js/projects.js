@@ -46,7 +46,7 @@ function setInfo(data, id) {
 
 function list_studies() {
     const list_cont = Util.eleQRY('.blog-list')
-
+    const case_logo = ['./assets/partners/nhs.svg','./assets/partners/katlas.jpg',]
     for (let i = 0; i < data.length; i++) {
         let study = Util.crtEle('div')
         Util.addStyel(study, 'blog-list-blog')
@@ -58,7 +58,7 @@ function list_studies() {
             </div>
             <div class="blog-list-blog-content">
                 <h3 class="blog-list-blog-title">${data[i]._study}</h3>
-                
+                <img class="case_logo" src="${case_logo[i]}" alt="">
                 <a href="#ref_div" class="blog-list-expand"><i class="fas fa-angle-double-right"></i></a>
             </div>
         
