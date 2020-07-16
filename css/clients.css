@@ -67,7 +67,6 @@
     transition: .5s;
 }
 .minimize{
-    /* position: fixed; */
     display: none;
     padding: 1rem;
     background: rgba(236,64,122 ,1);

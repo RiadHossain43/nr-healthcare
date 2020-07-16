@@ -346,6 +346,18 @@ header{
 .social-link-ftr{
     margin: 1.5rem;
 }
+.scroll_top{
+    position: fixed;
+    top: 90%;
+    left: 90%;
+    padding: .5em  1em;
+    opacity: 0;
+    transition: 1s;
+    z-index: -5;
+    background: rgba(236,64,122 ,1);
+    color: white;
+    border-radius: 3px;
+}
 /*-----------X------------footer------------X------------*/
 
 

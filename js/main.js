@@ -16,7 +16,6 @@ window.addEventListener('load', () => {
     const container = document.querySelector('.container')
     const header = document.querySelector('header')
 
-
     let requests = ['Risk Assessments', '27002 Controls Implementation', 'Independent Audits',
         'Awareness and Training', 'Management Reviews', 'Continual Improvement Planning', 'Transformation']
 
@@ -58,7 +57,22 @@ window.addEventListener('load', () => {
         //         Util.set_style(header, { background: `var(--theme-color)` });
         // }
     }
+    let scroll_top_event = ()=>{
+        let scroll_btn = Util.eleQRY('.scroll_top');
+        const minimum_scroll = 800;
 
+        if(container.scrollTop > minimum_scroll) set_style(scroll_btn,{zIndex:1,opacity:1});
+        else set_style(scroll_btn,{zIndex:-5,opacity:0});
+    
+        scroll_btn.addEventListener('click',()=>{
+           container.scrollTo({
+                top:0,
+                left:0,
+                behavior: 'smooth'
+            });
+        });
+    }
+    
     function requestService(btn, i) {
 
         set_style(req_form_container, { display: 'block', opacity: 0 })
@@ -103,7 +117,7 @@ window.addEventListener('load', () => {
         })
 
     }
-    container.addEventListener('scroll', animatenav)
+    container.addEventListener('scroll', scroll_top_event)
     Anim.btnEfct()
 
 
