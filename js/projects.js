@@ -11,12 +11,12 @@ function setInfo(data, id) {
     <button class="minimize"><i class="fas fa-compress-alt"></i></button>
     <div class="blog-post-info">
         <div class="blog-post-date" style.>
-            <span>${ id > 9 ? id + 1 : `0${id + 1}`}</span>
+            <h1>${ id > 9 ? id + 1 : `0${id + 1}`}.</h1>
             <img class="case_num" src="./assets/casestd_icons/case_${id+1}.svg" alt="">
         </div>
         <h3 class="blog-title">${data[id]._study}</h3>
         <p class="blog-p">${data[id]._intro}</p>
-        <button class="read-more">Read More <i class="fas fa-expand-alt"></i></button>
+        <a href="#ref_div" class="read-more">Read More <i class="fas fa-expand-alt"></i></a>
     </div>
 
 `
@@ -35,7 +35,7 @@ function setInfo(data, id) {
     minimize.addEventListener('click', () => {
         Util.rmvStyel(blog_card, 'blog-card-2dry')
         Util.rmvStyel(blogs, 'blog-list-2dry')
-        Util.set_style(more_info, { display: 'block' })
+        Util.set_style(more_info, { display: 'inline-block' })
         setTimeout(() => Util.set_style(more_info, { opacity: 1 }), 10)
         minimize.style.display = 'none'
         blog_p.innerHTML = data[id]._intro
