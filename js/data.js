@@ -84,6 +84,12 @@ const data = [
         We are currently at the proof of concept stage and are delivering better results, now seeking need more clinical data for further trials. 
         `
     }
+    // ,
+    // {
+    //     _study: "MEdiBio ",
+    //     _intro: `hello`,
+    //     _detail: `bye`
+    // }
 
 ]
 
