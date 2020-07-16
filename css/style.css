@@ -332,11 +332,11 @@ header{
 
 /*-----------------------footer------------------------*/
 .footer{
-    padding: 2.5rem 0;
+    padding: 2rem 0;
     background:var(--theme-color);
 }
 .follow-me,.copyright{
-    padding: 2rem 0;
+    padding: 1rem 0;
     text-align: center;
 }
 .follow-me a{
