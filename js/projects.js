@@ -57,7 +57,7 @@ function list_studies() {
                 <p>${ i > 9 ? i + 1 : `0${i + 1}`}</p>
             </div>
             <div class="blog-list-blog-content">
-                <h3 class="blog-list-blog-title">${data[i]._study}</h3>
+                <h3 class="blog-list-blog-title">${data[i]._study}<img class='case_icon'src="./assets/casestd_icons/case.svg" alt=""></h3>
                 <img class="case_logo" src="${case_logo[i]}" alt="">
                 <a href="#ref_div" class="blog-list-expand"><i class="fas fa-angle-double-right"></i></a>
             </div>

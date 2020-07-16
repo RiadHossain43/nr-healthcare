@@ -40,6 +40,10 @@
     margin: 0 1rem; 
     /* border-left: 2px solid #7986CB; */
 }
+.case_icon{
+    margin-left: 1rem;
+    height: 2rem;
+}
 .case_num{
     position: absolute;
     opacity: .1;
@@ -77,7 +81,7 @@
     margin:0 1rem;
 }
 .blog-list{
-    width: 25%;
+    width: 32%;
     margin: auto;
     height: 60vh;
     overflow-y: scroll;
