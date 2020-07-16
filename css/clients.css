@@ -99,9 +99,12 @@
     transform: translateX(-10%);
     font-size: 1.1rem;
 }
+.blog-list-blog-title{
+    color: var(--theme-color);
+}
 .blog-list-blog-content{
     margin: 0 1rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 .blog-list-blog-p{
@@ -109,7 +112,8 @@
     font-size: 1rem;
 }
 .blog-list-expand{
-    color: chocolate;
+    display: block;
+    color: rgba(236,64,122 ,1);
     background: transparent;
 }
 
@@ -161,6 +165,6 @@
     }
     .blog-list-blog-content{
         margin:0 0 0 .4rem;
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
     }
 }
