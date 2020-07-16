@@ -339,6 +339,10 @@ header{
     padding: 2rem 0;
     text-align: center;
 }
+.follow-me a{
+    margin:0 .5rem;
+    font-size: 1.2rem;
+}
 .social-link-ftr{
     margin: 1.5rem;
 }
@@ -518,5 +522,9 @@ header{
     }
     .social-link-ftr{
         margin:.7rem;
+    }
+    .follow-me,.copyright{
+        padding: 1rem 0;
+        text-align: center;
     }
 }

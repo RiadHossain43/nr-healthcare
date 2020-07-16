@@ -12,6 +12,7 @@ function setInfo(data, id) {
     <div class="blog-post-info">
         <div class="blog-post-date" style.>
             <span>${ id > 9 ? id + 1 : `0${id + 1}`}</span>
+            <img class="case_num" src="./assets/casestd_icons/case_${id+1}.svg" alt="">
         </div>
         <h3 class="blog-title">${data[id]._study}</h3>
         <p class="blog-p">${data[id]._intro}</p>
@@ -58,7 +59,7 @@ function list_studies() {
             <div class="blog-list-blog-content">
                 <h3 class="blog-list-blog-title">${data[i]._study}</h3>
                 
-                <button class="blog-list-expand"><i class="fas fa-angle-double-right"></i></button>
+                <a href="#ref_div" class="blog-list-expand"><i class="fas fa-angle-double-right"></i></a>
             </div>
         
         `
