@@ -161,6 +161,7 @@ textarea:focus{
     #send_msg, #contact_info{
         width:100%;
         padding: 1rem;
+        height: 20rem;
     }
     .contact_typ{
         margin: 1em 0;
@@ -206,7 +207,6 @@ textarea:focus{
     }
     #contact_info{
         padding: .5em 1em;
-        height: 20rem;
     }
     .email-hero{
         height: 15rem;
