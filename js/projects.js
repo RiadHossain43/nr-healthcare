@@ -8,7 +8,6 @@ function setInfo(data, id) {
 
     blog_card.innerHTML = `
     
-    <img class="stdy_bg" src="./assets/styleicons/bgvector.svg" alt="">
     <button class="minimize"><i class="fas fa-compress-alt"></i></button>
     <div class="blog-post-info">
         <div class="blog-post-date" style.>

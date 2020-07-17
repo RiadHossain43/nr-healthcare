@@ -40,13 +40,6 @@
 }
 .blog-post-info{
     margin: 0 1rem; 
-    /* border-left: 2px solid #7986CB; */
-}
-.stdy_bg{
-    position: absolute;
-    height:100%;
-    z-index: -1;
-    opacity: .1;
 }
 .case_icon{
     position: absolute;

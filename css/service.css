@@ -8,47 +8,6 @@
     background-color: #f1f1f1;
     border-radius: 0% 100% 0% 100% / 87% 46% 54% 13% ;
 }
-.gmtry{
-    position: absolute;
-    height: 2rem;
-    transform-origin: center;
-    opacity: .6;
-}
-.gmtry:nth-of-type(1){
-    top: 10%;
-    left: 2%;
-    height: 4rem;
-}
-.gmtry:nth-of-type(2){
-    top: 30%;
-    left: 90%;
-    height: 3rem;
-    transform: rotate(-10deg);
-}
-.gmtry:nth-of-type(3){
-    top: -5%;
-    left: 80%;
-    height: 4rem;
-    transform: rotate(-20deg);
-}
-.gmtry:nth-of-type(4){
-    top: 70%;
-    left: 90%;
-    height: 4rem;
-    transform: rotate(-20deg);
-}
-.gmtry:nth-of-type(5){
-    top: 95%;
-    left: 50%;
-    height: 5rem;
-    transform: rotate(-20deg);
-}
-.gmtry:nth-of-type(6){
-    top: 60%;
-    left: 5%;
-    height: 5rem;
-    transform: rotate(-20deg);
-}
 .service-wrapper{
     display: grid;
     grid-template-columns: repeat(3,1fr);

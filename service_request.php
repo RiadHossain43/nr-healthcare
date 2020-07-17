@@ -94,7 +94,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 					"Reply to:".$emailTo."\r\n";
 
 		mail($emailTo,$subject,$body,$headers);
-		header("Location: index.html");
+		header("Location: r_success.html");
 	}else 
 	{
 		//echo "Opps...Error occured.! PLease Enter a name with laters and spaces and a valid Email format.\n Click back button on your browser to go back.";
