@@ -22,7 +22,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 		$name = inputCheck($_POST["name"]);
 		if(	!preg_match("/^[a-zA-Z0-9 .]*$/", $name))
 		{
-			$nameError = "Only letters and white space are allowed for name.";
+			$nameError = "Only letters and numbers allowed.";
 		}
 	}
 	if(empty($_POST["email"]))
