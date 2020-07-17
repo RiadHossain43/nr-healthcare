@@ -25,9 +25,9 @@
     transform: rotate(-10deg);
 }
 .gmtry:nth-of-type(3){
-    top: -10%;
+    top: -5%;
     left: 80%;
-    height: 5rem;
+    height: 4rem;
     transform: rotate(-20deg);
 }
 .gmtry:nth-of-type(4){
