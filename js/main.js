@@ -86,13 +86,13 @@ window.addEventListener('load', () => {
                 <h2>Request for ${requests[i]} service</h2>
                 <form class="req-form" action ="" method="POST">
                     <div class="half_width field req-f"><input class="input" type="text" name="name" id="Name"
-                            placeholder="Name"></div>
+                            placeholder="Name" required></div>
                     <div class="half_width field req-f"><input class="input" type="text" name="phone" id="Phone"
-                            placeholder="Phone"></div>
+                            placeholder="Phone" required></div>
                     <div class="full_width field req-f"><input class="input" type="text" name="email" id="Email"
-                            placeholder="Email"></div>
+                            placeholder="Email" required></div>
                     <div class="full_width field req-f"><input class="input" type="text" name="organization" id="organization"
-                            placeholder="Organization"></div>
+                            placeholder="Organization" required></div>
                     <div class="full_width field req-f"><input class="input" type="hidden" name="subject" id="company"
                             placeholder="Subject" value="Service request for ${requests[i]}"></div>
                     <div class="full_width field req-f"><textarea name="notes" id="about_product"

@@ -22,7 +22,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 		$name = inputCheck($_POST["name"]);
 		if(	!preg_match("/^[a-zA-Z ]*$/", $name))
 		{
-			$nameError = "Only letters and White space are alloed.";
+			$nameError = "Only letters and white space are allowed.";
 		}
 	}
 	if(empty($_POST["email"]))
@@ -34,7 +34,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 		$email = inputCheck($_POST["email"]);
 		if(!filter_var($email, FILTER_VALIDATE_EMAIL))
 		{
-			$emailError = "Invalid email format";
+			$emailError = "Invalid email formate";
 		}
 	}
 	if(empty($_POST["phone"]))
@@ -44,9 +44,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 	else 
 	{
 		$phone = inputCheck($_POST["phone"]);
-		if(!filter_var($phone, FILTER_SANITIZE_NUMBER_INT))
+		$phone = filter_var($phone, FILTER_SANITIZE_NUMBER_INT);
+		$phone = str_replace("-", "",$phone);
+		if(strlen($phone) < 10 || strlen($phone) > 14)
 		{
-			$phoneError = "Invalid phone format";
+			$phoneError = "Invalid phone formate";
 		}
 	}
 	if(empty($_POST["message"]))
@@ -88,7 +90,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 	{
 		//echo "Opps...Error occured.! PLease Enter a name with laters and spaces and a valid Email format.\n Click back button on your browser to go back.";
 		print " <div style=\"position: absolute;
-				border: 1px solid black;
+				border: 1px solid rgba(236,64,122 ,1);
 				top: 40%;
 				left: 50%;
 				width: 400px;
@@ -96,21 +98,20 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 				border-radius: 10px;
 				display:flex;
 				flex-direction:column;
+				color:rgba(236,64,122 ,1);
 				\">
-					<h3 style=\"margin:14px;\">Opps...Error occured.! Name or Email might be invalid format\n Click Go Back button to go back.</h3>
-					<a href=\"index.html\" style=\"padding:15px;background:black;color:white;border-radius: 8px;text-decoration:none;\">Go Back</a>
+					<h3 style=\"margin:14px;\">
+						{$nameError}
+					</h3>
+					<h3 style=\"margin:14px;\">
+						{$emailError}
+					</h3>
+					<h3 style=\"margin:14px;\">
+						{$phoneError}
+					</h3>
+					<a href=\"contact.html\" style=\"padding:15px;background:rgba(236,64,122 ,1);color:white;border-radius: 8px;text-decoration:none;\">Go Back</a>
 				</div>";
-		/*echo "
-		      <div style="position: absolute;
-				border: 1px solid black;
-				top: 50%;
-				left: 50%;
-				width: 400px;
-				transform: translate(-50%,-50%);
-				border-radius: 10px;
-				">
-					<h3>Opps...Error occured.! PLease Enter a name with laters and spaces and a valid Email format.\n Click back button on your browser to go back.</h3>
-				</div>";*/
+		
 			
 	}
 
