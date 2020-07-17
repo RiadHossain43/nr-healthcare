@@ -161,6 +161,8 @@ textarea:focus{
     #send_msg, #contact_info{
         width:100%;
         padding: 1rem;
+    }
+    #contact_info{
         height: 20rem;
     }
     .contact_typ{
