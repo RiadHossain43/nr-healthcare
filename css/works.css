@@ -22,6 +22,7 @@
     position: relative;
 }
 .service-detail{
+    position: relative;
     width: 80%;
     background:rgba(255,255,255,.9);
     padding: 2rem 2rem 0 2rem;
@@ -30,6 +31,12 @@
 .service-detail h1{
     text-align: center;
     margin: 1rem;
+}
+.srvc_bg{
+    position: absolute;
+    top: 0;
+    width: 130%;
+    opacity: .2;
 }
 .risk-assesment-wrapper{
     

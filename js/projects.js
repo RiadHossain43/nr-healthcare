@@ -7,7 +7,8 @@ const blogs = Util.eleQRY('.blog-list')
 function setInfo(data, id) {
 
     blog_card.innerHTML = `
-
+    
+    <img class="stdy_bg" src="./assets/styleicons/bgvector.svg" alt="">
     <button class="minimize"><i class="fas fa-compress-alt"></i></button>
     <div class="blog-post-info">
         <div class="blog-post-date" style.>
@@ -56,6 +57,7 @@ function list_studies() {
             <div class="blog-list-date">
                 <p>${ i > 9 ? i + 1 : `0${i + 1}`}</p>
             </div>
+            
             <div class="blog-list-blog-content">
                 <h3 class="blog-list-blog-title">${data[i]._study}<img class='case_icon'src="./assets/casestd_icons/case.svg" alt=""></h3>
                 <img class="case_logo" src="${case_logo[i]}" alt="">
