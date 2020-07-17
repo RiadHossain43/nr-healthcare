@@ -80,11 +80,10 @@
     margin: 0 1rem;
 }
 .email-hero{
-    height: 25rem;
+    height: 25vw;
     position: absolute;
     top: 50%;
-    left: 50%;
-    
+    left: 50%;  
 }
 .email-hero:nth-of-type(1){
     transform: translate(-47%,-47%);
