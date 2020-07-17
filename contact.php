@@ -20,9 +20,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 	}else 
 	{
 		$name = inputCheck($_POST["name"]);
-		if(	!preg_match("/^[a-zA-Z ]*$/", $name))
+		if(	!preg_match("/^[a-zA-Z0-9 .]*$/", $name))
 		{
-			$nameError = "Only letters and white space are allowed.";
+			$nameError = "Only letters and numbers allowed.";
 		}
 	}
 	if(empty($_POST["email"]))
@@ -34,7 +34,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 		$email = inputCheck($_POST["email"]);
 		if(!filter_var($email, FILTER_VALIDATE_EMAIL))
 		{
-			$emailError = "Invalid email formate";
+			$emailError = "Invalid email format";
 		}
 	}
 	if(empty($_POST["phone"]))
@@ -48,7 +48,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 		$phone = str_replace("-", "",$phone);
 		if(strlen($phone) < 10 || strlen($phone) > 14)
 		{
-			$phoneError = "Invalid phone formate";
+			$phoneError = "Invalid phone number format";
 		}
 	}
 	if(empty($_POST["message"]))
@@ -73,7 +73,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 		$Client_phone = $phone;
 
 		$emailFrom = "hassanhossain43@gmail.com";
-		$emailTo = "riadhossain7464@gmail.com";
+		$emailTo = "nuraz.zamal@nrhealthcare.net";
 
 		$subject = $subj=="" ? "New submission from a client" : $subj ;
 		$body = "Client Name :". $Client."\n".
@@ -88,18 +88,22 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 		header("Location: c_success.html");
 	}else 
 	{
+		//border: 1px solid rgba(236,64,122 ,1);
 		//echo "Opps...Error occured.! PLease Enter a name with laters and spaces and a valid Email format.\n Click back button on your browser to go back.";
 		print " <div style=\"position: absolute;
-				border: 1px solid rgba(236,64,122 ,1);
-				top: 40%;
+				
+				top: 50%;
 				left: 50%;
-				width: 400px;
-				transform: translate(-50%,-40%);
-				border-radius: 10px;
+				width: 80%;
+				transform: translate(-50%,-50%);
 				display:flex;
 				flex-direction:column;
+				justify-content:center;
+				align-items:center;
 				color:rgba(236,64,122 ,1);
 				\">
+					<img style=\"height: 2rem;\" src=\"./assets/linkicons/error.svg\" alt=\"\">
+					<h3 style=\"margin:14px;\">Oops something went wrong there !!</h3>
 					<h3 style=\"margin:14px;\">
 						{$nameError}
 					</h3>
@@ -111,7 +115,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 					</h3>
 					<a href=\"contact.html\" style=\"padding:15px;background:rgba(236,64,122 ,1);color:white;border-radius: 8px;text-decoration:none;\">Go Back</a>
 				</div>";
-		
 			
 	}
 

@@ -20,7 +20,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 	}else 
 	{
 		$name = inputCheck($_POST["name"]);
-		if(	!preg_match("/^[a-zA-Z ]*$/", $name))
+		if(	!preg_match("/^[a-zA-Z0-9 .]*$/", $name))
 		{
 			$nameError = "Only letters and white space are allowed for name.";
 		}
@@ -48,7 +48,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 		$phone = str_replace("-", "", $phone);
 		if(strlen($phone) < 10 || strlen($phone) > 14)
 		{
-			$phoneError = "Invalid phone formate";
+			$phoneError = "Invalid phone number format";
 		}
     }
     if(empty($_POST["organization"]))
@@ -57,6 +57,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 	}else 
 	{
 		$org = inputCheck($_POST["organization"]);
+		if(	!preg_match("/^[a-zA-Z0-9 .]*$/", $org))
+		{
+			$orgError = "Only letters and numbers allowed.";
+		}
 	}
 	if(empty($_POST["notes"]))
 	{
@@ -81,7 +85,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
         $Client_org = $org;
 
 		$emailFrom = "hassanhossain43@gmail.com";
-		$emailTo = "riadhossain7464@gmail.com";
+		$emailTo = "nuraz.zamal@nrhealthcare.net"; 
 
 		$subject = $subj=="" ? "New submission from a client" : $subj ;
 		$body = "Client Name :". $Client."\n".
@@ -97,7 +101,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 		header("Location: r_success.html");
 	}else 
 	{
-		//echo "Opps...Error occured.! PLease Enter a name with laters and spaces and a valid Email format.\n Click back button on your browser to go back.";
+		
 		print " <div style=\"position: absolute;
 				border: 1px solid rgba(236,64,122 ,1);
 				top: 40%;
@@ -109,6 +113,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 				flex-direction:column;
 				color:rgba(236,64,122 ,1);
 				\">
+				<h3 style=\"margin:14px;\">Oops something went wrong there !!</h3>
 				<h3 style=\"margin:14px;\">
 					{$nameError}
 				</h3>
