@@ -103,14 +103,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 	{
 		
 		print " <div style=\"position: absolute;
-				border: 1px solid rgba(236,64,122 ,1);
-				top: 40%;
+				top: 50%;
 				left: 50%;
-				width: 400px;
-				transform: translate(-50%,-40%);
-				border-radius: 10px;
+				width: 80%;
+				transform: translate(-50%,-50%);
 				display:flex;
 				flex-direction:column;
+				justify-content:center;
+				align-items:center;
 				color:rgba(236,64,122 ,1);
 				\">
 				<h3 style=\"margin:14px;\">Oops something went wrong there !!</h3>
@@ -126,7 +126,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 				<h3 style=\"margin:14px;\">
 					{$orgError}
 				</h3>
-				<a href=\"services.html\" style=\"padding:15px;background:rgba(236,64,122 ,1);color:white;border-radius: 8px;text-decoration:none;\">Go Back</a>
+				<a href=\"services.html\" style=\"padding:15px;background:rgba(236,64,122 ,1);color:white;border-radius: 8px;text-decoration:none;text-align:center;\">Go Back</a>
 				</div>";
 			
 	}

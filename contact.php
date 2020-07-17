@@ -91,7 +91,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 		//border: 1px solid rgba(236,64,122 ,1);
 		//echo "Opps...Error occured.! PLease Enter a name with laters and spaces and a valid Email format.\n Click back button on your browser to go back.";
 		print " <div style=\"position: absolute;
-				
 				top: 50%;
 				left: 50%;
 				width: 80%;
@@ -102,7 +101,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 				align-items:center;
 				color:rgba(236,64,122 ,1);
 				\">
-					<img style=\"height: 2rem;\" src=\"./assets/linkicons/error.svg\" alt=\"\">
 					<h3 style=\"margin:14px;\">Oops something went wrong there !!</h3>
 					<h3 style=\"margin:14px;\">
 						{$nameError}
@@ -113,7 +111,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 					<h3 style=\"margin:14px;\">
 						{$phoneError}
 					</h3>
-					<a href=\"contact.html\" style=\"padding:15px;background:rgba(236,64,122 ,1);color:white;border-radius: 8px;text-decoration:none;\">Go Back</a>
+					<a href=\"contact.html\" style=\"padding:15px;background:rgba(236,64,122 ,1);color:white;border-radius: 8px;text-decoration:none;text-align:center;\">Go Back</a>
 				</div>";
 			
 	}
