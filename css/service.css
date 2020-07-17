@@ -12,6 +12,7 @@
     position: absolute;
     height: 2rem;
     transform-origin: center;
+    opacity: .6;
 }
 .gmtry:nth-of-type(1){
     top: 10%;
